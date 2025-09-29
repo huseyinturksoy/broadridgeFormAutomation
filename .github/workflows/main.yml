@@ -64,14 +64,14 @@ jobs:
           server_port: ${{ secrets.SMTP_PORT }}
           username: ${{ secrets.SMTP_USERNAME }}
           password: ${{ secrets.SMTP_PASSWORD }}
-          subject: "🚨 Test Failure in Zoetis Pets"
+          subject: "🚨 Test Failure in Broadridge Forms"
           to:  huseyin.turksoy@nmqdigital.com #;gamze.bektas@nmqdigital.com ${{ secrets.CLIENT_EMAILS }}
           from: ${{ secrets.SMTP_USERNAME }}
           content_type: text/html
           body: |
             <h2>Some tests have failed</h2>
             <p>  ${{ steps.failures.outputs.report }}   </p>
-            <p>📑 <a href="https://huseyinturksoy.github.io/zoetispetscheck/">View Full Report</a></p>
+            <p>📑 <a href="https://huseyinturksoy.github.io/broadridgeFormAutomation/">View Full Report</a></p>
               
 
 
