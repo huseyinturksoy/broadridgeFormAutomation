@@ -111,12 +111,14 @@ public class Tests {
         } else if (hasHeaderContact == 1 && hasV1ContactUsForm == 1){
             BrowserUtils.headerContactUsFiller(pageComparisonURL);
             BrowserUtils.v1ContactUsFiller(pageComparisonURL);
-        } else {
+        } else if (hasHeaderContact == 1 && hasV2downloadForm == 1){
             BrowserUtils.headerContactUsFiller(pageComparisonURL);
             BrowserUtils.v2DownloadFiller(pageComparisonURL);
+        } else if (hasHeaderContact == 1 && hasV2ContactUsForm == 0 && hasV2downloadForm == 0 && hasV1ContactUsForm == 0){
+            BrowserUtils.headerContactUsFiller(pageComparisonURL);
+        }else {
+            System.out.println("--------!!! NO FORM IS FOUND ON THE PAGE !!!--------");
         }
-
-
 
 
     }

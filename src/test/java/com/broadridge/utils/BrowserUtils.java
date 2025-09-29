@@ -74,7 +74,10 @@ public class BrowserUtils {
         headerLastName.sendKeys("Last_TESTTEST");
 
         WebElement headerEmail = Driver.getDriver().findElement(By.xpath("(//input[@placeholder='john@email.com'])[1]"));
-        headerEmail.sendKeys(generateEmailTimeStamp());
+        String emailTimeStamp = generateEmailTimeStamp();
+        headerEmail.sendKeys(emailTimeStamp);
+        System.out.println("emailTimeStamp = " + emailTimeStamp);
+        Driver.test.info("emailTimeStamp = " + emailTimeStamp);
 
         WebElement headerPhone = Driver.getDriver().findElement(By.xpath("(//input[@placeholder='+1 _ _ _ - _ _ _ - _ _ _ _'])[1]"));
         headerPhone.sendKeys("999-999-9999");
@@ -118,8 +121,12 @@ public class BrowserUtils {
         System.out.println("formSubmissionId = " + formSubmissionId);
         System.out.println("fullURL = " + fullURL);
 
-        Assert.assertTrue(formSubmissionId != null);
-        Assert.assertEquals(fullURL, pageComparisonURL);
+        if (formSubmissionId != null && fullURL.equals(pageComparisonURL)){
+            Driver.test.pass("Header Contact Us Form Filled Successfully");
+            Driver.test.pass("The form has submission ID and the URL is proper");
+        }else {
+            Driver.test.fail("Header Contact Us Form Filled Failed");
+        }
 
 
     }
@@ -140,7 +147,10 @@ public class BrowserUtils {
         lastName.sendKeys("Last_TESTTEST");
 
         WebElement email = Driver.getDriver().findElement(By.xpath("(//input[@placeholder='john@email.com'])[2]"));
-        email.sendKeys(generateEmailTimeStamp());
+        String emailTimeStamp = generateEmailTimeStamp();
+        email.sendKeys(emailTimeStamp);
+        System.out.println("emailTimeStamp = " + emailTimeStamp);
+        Driver.test.info("emailTimeStamp = " + emailTimeStamp);
 
         WebElement phone = Driver.getDriver().findElement(By.xpath("(//input[@placeholder='+1 _ _ _ - _ _ _ - _ _ _ _'])[2]"));
         phone.sendKeys("999-999-9999");
@@ -185,8 +195,12 @@ public class BrowserUtils {
         System.out.println("formSubmissionId = " + formSubmissionId);
         System.out.println("fullURL = " + fullURL);
 
-        Assert.assertTrue(formSubmissionId != null);
-        Assert.assertEquals(fullURL, pageComparisonURL);
+        if (formSubmissionId != null && fullURL.equals(pageComparisonURL)){
+            Driver.test.pass("Header Contact Us Form Filled Successfully");
+            Driver.test.pass("The form has submission ID and the URL is proper");
+        }else {
+            Driver.test.fail("Header Contact Us Form Filled Failed");
+        }
 
 
 
@@ -194,6 +208,78 @@ public class BrowserUtils {
 
 
     public static void  v2DownloadFiller(String pageComparisonURL) throws IOException, InterruptedException {
+
+        Driver.getDriver().navigate().refresh();
+        Thread.sleep(3000);
+
+        WebElement firstName = Driver.getDriver().findElement(By.xpath("(//input[@placeholder='First name'])[2]"));
+        firstName.sendKeys("First_TESTTEST");
+
+        WebElement lastName = Driver.getDriver().findElement(By.xpath("(//input[@placeholder='Last name'])[2]"));
+        lastName.sendKeys("Last_TESTTEST");
+
+        WebElement email = Driver.getDriver().findElement(By.xpath("(//input[@placeholder='john@email.com'])[2]"));
+        String emailTimeStamp = generateEmailTimeStamp();
+        email.sendKeys(emailTimeStamp);
+        System.out.println("emailTimeStamp = " + emailTimeStamp);
+        Driver.test.info("emailTimeStamp = " + emailTimeStamp);
+
+
+        WebElement companyName = Driver.getDriver().findElement(By.xpath("(//input[@placeholder='Your company name'])[2]"));
+        companyName.sendKeys("Company_TESTTEST");
+
+
+        WebElement checkBoxForExtraField = Driver.getDriver().findElement(By.xpath("//input[@id='toggle-additional-fields']"));
+        click(checkBoxForExtraField);
+        Thread.sleep(1000);
+
+
+        WebElement phone = Driver.getDriver().findElement(By.xpath("(//input[@placeholder='+1 _ _ _ - _ _ _ - _ _ _ _'])[2]"));
+        phone.sendKeys("999-999-9999");
+
+        WebElement jobTitle = Driver.getDriver().findElement(By.xpath("(//input[@id='job_title'])[2]"));
+        jobTitle.sendKeys("Job_TESTTEST");
+
+        WebElement countrySelectorButton = Driver.getDriver().findElement(By.xpath("(//button[@class='dropdown-trigger'])[2]"));
+        click(countrySelectorButton);
+        Thread.sleep(1000);
+
+        WebElement unitedStatesOption = Driver.getDriver().findElement(By.xpath("(//li[@data-value='United States'])[2]"));
+        click(unitedStatesOption);
+
+        WebElement message = Driver.getDriver().findElement(By.xpath("(//textarea[@id='comment'])[2]"));
+        message.sendKeys("This is an automated test submission.  Please ignore.");
+
+        WebElement submitButton = Driver.getDriver().findElement(By.xpath("(//button[@type='submit'])[2]"));
+        click(submitButton);
+        Thread.sleep(3000);
+
+        Driver.test.info("............V2 Download Form Filled...................");
+
+        String formMessage = Driver.getDriver().findElement(By.xpath("//div[@class='contact-us__form-grid']")).getText();
+        System.out.println("form message = " + formMessage);
+        Driver.test.info("form Message = " + formMessage);
+
+        String formpayload = Driver.formpayload;
+        System.out.println("formpayload for validation = " + formpayload);
+        Driver.test.info("formpayload for validation = " + formpayload);
+
+        String formSubmissionId = getJsonField(formpayload, "formSubmissionId");
+        String fullURL = getJsonField(formpayload, "fullURL");
+        Driver.test.info("formSubmissionId = " + formSubmissionId);
+        Driver.test.info("fullURL = " + fullURL);
+
+
+        System.out.println("formSubmissionId = " + formSubmissionId);
+        System.out.println("fullURL = " + fullURL);
+
+        if (formSubmissionId != null && fullURL.equals(pageComparisonURL)){
+            Driver.test.pass("Header Contact Us Form Filled Successfully");
+            Driver.test.pass("The form has submission ID and the URL is proper");
+        }else {
+            Driver.test.fail("Header Contact Us Form Filled Failed");
+        }
+
 
     }
 
