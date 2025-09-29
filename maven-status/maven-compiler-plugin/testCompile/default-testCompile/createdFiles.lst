@@ -1,0 +1,7 @@
+com/broadridge/utils/ConfigurationReader.class
+com/broadridge/utils/BrowserUtils.class
+com/broadridge/TestData.class
+com/broadridge/utils/Driver.class
+com/broadridge/ExtentManager.class
+com/broadridge/FailureLogger.class
+com/broadridge/Tests.class
