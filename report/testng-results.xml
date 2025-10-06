@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="4" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-29T22:08:40 UTC" name="Surefire suite" finished-at="2025-09-29T22:16:13 UTC" duration-ms="452697">
+  <suite started-at="2025-10-06T05:41:37 UTC" name="Surefire suite" finished-at="2025-10-06T05:48:06 UTC" duration-ms="389146">
     <groups>
     </groups>
-    <test started-at="2025-09-29T22:08:40 UTC" name="Surefire test" finished-at="2025-09-29T22:16:13 UTC" duration-ms="452697">
+    <test started-at="2025-10-06T05:41:37 UTC" name="Surefire test" finished-at="2025-10-06T05:48:06 UTC" duration-ms="389146">
       <class name="com.broadridge.Tests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-09-29T22:08:40 UTC" name="setUp" finished-at="2025-09-29T22:08:40 UTC" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-10-06T05:41:37 UTC" name="setUp" finished-at="2025-10-06T05:41:37 UTC" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-09-29T22:08:40 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-09-29T22:09:29 UTC" duration-ms="48985" status="PASS">
+        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-10-06T05:41:37 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-10-06T05:42:23 UTC" duration-ms="45922" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,7 +27,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FormTester -->
-        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-09-29T22:09:29 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-09-29T22:10:06 UTC" duration-ms="36913" status="PASS">
+        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-10-06T05:42:23 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-10-06T05:42:50 UTC" duration-ms="27290" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -40,10 +40,80 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=140.0.7339.207)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f94164bac83ea2d9d5b59a26e2c2d33b, sendKeysToElement {id=f.F2821306A86DA5683D24EDA3B2A516D5.d.D8C750E41CC1E0A1A06924F59317751A.e.131, value=[Ljava.lang.CharSequence;@1729ec00}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.207, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: /tmp/chrome-user-data999276...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34111}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34111/devtoo..., se:cdpVersion: 140.0.7339.207, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (f94164bac83ea2d9d5b59a26e2c2d33b)] -> xpath: (//input[@placeholder='First name'])[1]]
+Session ID: f94164bac83ea2d9d5b59a26e2c2d33b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=140.0.7339.207)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f94164bac83ea2d9d5b59a26e2c2d33b, sendKeysToElement {id=f.F2821306A86DA5683D24EDA3B2A516D5.d.D8C750E41CC1E0A1A06924F59317751A.e.131, value=[Ljava.lang.CharSequence;@1729ec00}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.207, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: /tmp/chrome-user-data999276...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34111}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34111/devtoo..., se:cdpVersion: 140.0.7339.207, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (f94164bac83ea2d9d5b59a26e2c2d33b)] -> xpath: (//input[@placeholder='First name'])[1]]
+Session ID: f94164bac83ea2d9d5b59a26e2c2d33b
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+at com.broadridge.utils.BrowserUtils.headerContactUsFiller(BrowserUtils.java:71)
+at com.broadridge.Tests.FormTester(Tests.java:109)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FormTester -->
-        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-09-29T22:10:06 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-09-29T22:10:41 UTC" duration-ms="35013" status="PASS">
+        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-10-06T05:42:50 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-10-06T05:43:26 UTC" duration-ms="35331" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -59,7 +129,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FormTester -->
-        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-09-29T22:10:41 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-09-29T22:11:31 UTC" duration-ms="49283" status="PASS">
+        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-10-06T05:43:26 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-10-06T05:44:03 UTC" duration-ms="37348" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -72,10 +142,80 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=140.0.7339.207)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f94164bac83ea2d9d5b59a26e2c2d33b, sendKeysToElement {id=f.F2821306A86DA5683D24EDA3B2A516D5.d.E6022DC911268946140881B0428811CD.e.261, value=[Ljava.lang.CharSequence;@1f9f381d}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.207, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: /tmp/chrome-user-data999276...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34111}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34111/devtoo..., se:cdpVersion: 140.0.7339.207, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (f94164bac83ea2d9d5b59a26e2c2d33b)] -> xpath: (//input[@placeholder='First name'])[1]]
+Session ID: f94164bac83ea2d9d5b59a26e2c2d33b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=140.0.7339.207)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f94164bac83ea2d9d5b59a26e2c2d33b, sendKeysToElement {id=f.F2821306A86DA5683D24EDA3B2A516D5.d.E6022DC911268946140881B0428811CD.e.261, value=[Ljava.lang.CharSequence;@1f9f381d}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.207, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: /tmp/chrome-user-data999276...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34111}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34111/devtoo..., se:cdpVersion: 140.0.7339.207, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (f94164bac83ea2d9d5b59a26e2c2d33b)] -> xpath: (//input[@placeholder='First name'])[1]]
+Session ID: f94164bac83ea2d9d5b59a26e2c2d33b
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+at com.broadridge.utils.BrowserUtils.headerContactUsFiller(BrowserUtils.java:71)
+at com.broadridge.Tests.FormTester(Tests.java:109)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FormTester -->
-        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-09-29T22:11:31 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-09-29T22:12:19 UTC" duration-ms="48822" status="PASS">
+        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-10-06T05:44:03 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-10-06T05:44:40 UTC" duration-ms="37297" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -88,10 +228,80 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=140.0.7339.207)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f94164bac83ea2d9d5b59a26e2c2d33b, sendKeysToElement {id=f.F2821306A86DA5683D24EDA3B2A516D5.d.4E5864098089C0A688EB769985F35023.e.318, value=[Ljava.lang.CharSequence;@435cc7f9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.207, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: /tmp/chrome-user-data999276...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34111}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34111/devtoo..., se:cdpVersion: 140.0.7339.207, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (f94164bac83ea2d9d5b59a26e2c2d33b)] -> xpath: (//input[@placeholder='First name'])[1]]
+Session ID: f94164bac83ea2d9d5b59a26e2c2d33b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=140.0.7339.207)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f94164bac83ea2d9d5b59a26e2c2d33b, sendKeysToElement {id=f.F2821306A86DA5683D24EDA3B2A516D5.d.4E5864098089C0A688EB769985F35023.e.318, value=[Ljava.lang.CharSequence;@435cc7f9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.207, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: /tmp/chrome-user-data999276...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34111}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34111/devtoo..., se:cdpVersion: 140.0.7339.207, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (f94164bac83ea2d9d5b59a26e2c2d33b)] -> xpath: (//input[@placeholder='First name'])[1]]
+Session ID: f94164bac83ea2d9d5b59a26e2c2d33b
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+at com.broadridge.utils.BrowserUtils.headerContactUsFiller(BrowserUtils.java:71)
+at com.broadridge.Tests.FormTester(Tests.java:115)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FormTester -->
-        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-09-29T22:12:19 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-09-29T22:13:06 UTC" duration-ms="46598" status="PASS">
+        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-10-06T05:44:40 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-10-06T05:45:18 UTC" duration-ms="37247" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -104,10 +314,80 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=140.0.7339.207)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f94164bac83ea2d9d5b59a26e2c2d33b, sendKeysToElement {id=f.F2821306A86DA5683D24EDA3B2A516D5.d.96EE88246352C6CE3BCC05951F112ACA.e.375, value=[Ljava.lang.CharSequence;@2fdf17dc}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.207, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: /tmp/chrome-user-data999276...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34111}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34111/devtoo..., se:cdpVersion: 140.0.7339.207, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (f94164bac83ea2d9d5b59a26e2c2d33b)] -> xpath: (//input[@placeholder='First name'])[1]]
+Session ID: f94164bac83ea2d9d5b59a26e2c2d33b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=140.0.7339.207)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f94164bac83ea2d9d5b59a26e2c2d33b, sendKeysToElement {id=f.F2821306A86DA5683D24EDA3B2A516D5.d.96EE88246352C6CE3BCC05951F112ACA.e.375, value=[Ljava.lang.CharSequence;@2fdf17dc}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.207, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: /tmp/chrome-user-data999276...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34111}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34111/devtoo..., se:cdpVersion: 140.0.7339.207, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (f94164bac83ea2d9d5b59a26e2c2d33b)] -> xpath: (//input[@placeholder='First name'])[1]]
+Session ID: f94164bac83ea2d9d5b59a26e2c2d33b
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+at com.broadridge.utils.BrowserUtils.headerContactUsFiller(BrowserUtils.java:71)
+at com.broadridge.Tests.FormTester(Tests.java:109)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FormTester -->
-        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-09-29T22:13:06 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-09-29T22:13:53 UTC" duration-ms="46715" status="PASS">
+        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-10-06T05:45:18 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-10-06T05:45:55 UTC" duration-ms="37431" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -120,10 +400,80 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=140.0.7339.207)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f94164bac83ea2d9d5b59a26e2c2d33b, sendKeysToElement {id=f.F2821306A86DA5683D24EDA3B2A516D5.d.3740F556FD43519211E9C50B69447EEE.e.422, value=[Ljava.lang.CharSequence;@7c72ecc}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.207, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: /tmp/chrome-user-data999276...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34111}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34111/devtoo..., se:cdpVersion: 140.0.7339.207, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (f94164bac83ea2d9d5b59a26e2c2d33b)] -> xpath: (//input[@placeholder='First name'])[1]]
+Session ID: f94164bac83ea2d9d5b59a26e2c2d33b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=140.0.7339.207)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f94164bac83ea2d9d5b59a26e2c2d33b, sendKeysToElement {id=f.F2821306A86DA5683D24EDA3B2A516D5.d.3740F556FD43519211E9C50B69447EEE.e.422, value=[Ljava.lang.CharSequence;@7c72ecc}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.207, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: /tmp/chrome-user-data999276...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34111}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34111/devtoo..., se:cdpVersion: 140.0.7339.207, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (f94164bac83ea2d9d5b59a26e2c2d33b)] -> xpath: (//input[@placeholder='First name'])[1]]
+Session ID: f94164bac83ea2d9d5b59a26e2c2d33b
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+at com.broadridge.utils.BrowserUtils.headerContactUsFiller(BrowserUtils.java:71)
+at com.broadridge.Tests.FormTester(Tests.java:109)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FormTester -->
-        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-09-29T22:13:53 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-09-29T22:14:39 UTC" duration-ms="46381" status="PASS">
+        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-10-06T05:45:55 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-10-06T05:46:32 UTC" duration-ms="36994" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -136,10 +486,80 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=140.0.7339.207)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f94164bac83ea2d9d5b59a26e2c2d33b, sendKeysToElement {id=f.F2821306A86DA5683D24EDA3B2A516D5.d.B24FBA0780DCFAC0B0164653F7E23F28.e.472, value=[Ljava.lang.CharSequence;@77ab22be}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.207, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: /tmp/chrome-user-data999276...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34111}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34111/devtoo..., se:cdpVersion: 140.0.7339.207, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (f94164bac83ea2d9d5b59a26e2c2d33b)] -> xpath: (//input[@placeholder='First name'])[1]]
+Session ID: f94164bac83ea2d9d5b59a26e2c2d33b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=140.0.7339.207)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f94164bac83ea2d9d5b59a26e2c2d33b, sendKeysToElement {id=f.F2821306A86DA5683D24EDA3B2A516D5.d.B24FBA0780DCFAC0B0164653F7E23F28.e.472, value=[Ljava.lang.CharSequence;@77ab22be}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.207, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: /tmp/chrome-user-data999276...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34111}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34111/devtoo..., se:cdpVersion: 140.0.7339.207, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (f94164bac83ea2d9d5b59a26e2c2d33b)] -> xpath: (//input[@placeholder='First name'])[1]]
+Session ID: f94164bac83ea2d9d5b59a26e2c2d33b
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+at com.broadridge.utils.BrowserUtils.headerContactUsFiller(BrowserUtils.java:71)
+at com.broadridge.Tests.FormTester(Tests.java:109)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FormTester -->
-        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-09-29T22:14:39 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-09-29T22:15:28 UTC" duration-ms="49387" status="PASS">
+        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-10-06T05:46:32 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-10-06T05:47:21 UTC" duration-ms="49285" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -155,7 +575,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FormTester -->
-        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-09-29T22:15:28 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-09-29T22:16:13 UTC" duration-ms="44168" status="PASS">
+        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-10-06T05:47:21 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-10-06T05:48:06 UTC" duration-ms="44614" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -171,7 +591,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FormTester -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-09-29T22:16:13 UTC" name="tearDown" finished-at="2025-09-29T22:16:13 UTC" duration-ms="388" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-10-06T05:48:06 UTC" name="tearDown" finished-at="2025-10-06T05:48:06 UTC" duration-ms="342" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

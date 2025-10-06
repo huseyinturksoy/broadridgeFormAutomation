@@ -1,0 +1,66 @@
+❌ <b>Test:</b> FormTester<br/>
+&nbsp;&nbsp; <b>URL:</b> https://broadridgedigital:broadridge1@www-dev.broadridge.com/insight-pages/bpo-case-study  <br/>
+&nbsp;&nbsp; <b>Error:</b> element not interactable
+  (Session info: chrome=140.0.7339.207)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f94164bac83ea2d9d5b59a26e2c2d33b, sendKeysToElement {id=f.F2821306A86DA5683D24EDA3B2A516D5.d.D8C750E41CC1E0A1A06924F59317751A.e.131, value=[Ljava.lang.CharSequence;@1729ec00}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.207, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: /tmp/chrome-user-data999276...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34111}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34111/devtoo..., se:cdpVersion: 140.0.7339.207, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (f94164bac83ea2d9d5b59a26e2c2d33b)] -> xpath: (//input[@placeholder='First name'])[1]]
+Session ID: f94164bac83ea2d9d5b59a26e2c2d33b <br/><br/>
+❌ <b>Test:</b> FormTester<br/>
+&nbsp;&nbsp; <b>URL:</b> https://broadridgedigital:broadridge1@www-dev.broadridge.com/insight-pages/governance-regulatory-change  <br/>
+&nbsp;&nbsp; <b>Error:</b> element not interactable
+  (Session info: chrome=140.0.7339.207)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f94164bac83ea2d9d5b59a26e2c2d33b, sendKeysToElement {id=f.F2821306A86DA5683D24EDA3B2A516D5.d.E6022DC911268946140881B0428811CD.e.261, value=[Ljava.lang.CharSequence;@1f9f381d}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.207, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: /tmp/chrome-user-data999276...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34111}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34111/devtoo..., se:cdpVersion: 140.0.7339.207, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (f94164bac83ea2d9d5b59a26e2c2d33b)] -> xpath: (//input[@placeholder='First name'])[1]]
+Session ID: f94164bac83ea2d9d5b59a26e2c2d33b <br/><br/>
+❌ <b>Test:</b> FormTester<br/>
+&nbsp;&nbsp; <b>URL:</b> https://broadridgedigital:broadridge1@www-dev.broadridge.com/campaign/all-in-the-family-active-etf  <br/>
+&nbsp;&nbsp; <b>Error:</b> element not interactable
+  (Session info: chrome=140.0.7339.207)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f94164bac83ea2d9d5b59a26e2c2d33b, sendKeysToElement {id=f.F2821306A86DA5683D24EDA3B2A516D5.d.4E5864098089C0A688EB769985F35023.e.318, value=[Ljava.lang.CharSequence;@435cc7f9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.207, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: /tmp/chrome-user-data999276...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34111}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34111/devtoo..., se:cdpVersion: 140.0.7339.207, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (f94164bac83ea2d9d5b59a26e2c2d33b)] -> xpath: (//input[@placeholder='First name'])[1]]
+Session ID: f94164bac83ea2d9d5b59a26e2c2d33b <br/><br/>
+❌ <b>Test:</b> FormTester<br/>
+&nbsp;&nbsp; <b>URL:</b> https://broadridgedigital:broadridge1@www-dev.broadridge.com/who-we-serve/asset-management  <br/>
+&nbsp;&nbsp; <b>Error:</b> element not interactable
+  (Session info: chrome=140.0.7339.207)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f94164bac83ea2d9d5b59a26e2c2d33b, sendKeysToElement {id=f.F2821306A86DA5683D24EDA3B2A516D5.d.96EE88246352C6CE3BCC05951F112ACA.e.375, value=[Ljava.lang.CharSequence;@2fdf17dc}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.207, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: /tmp/chrome-user-data999276...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34111}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34111/devtoo..., se:cdpVersion: 140.0.7339.207, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (f94164bac83ea2d9d5b59a26e2c2d33b)] -> xpath: (//input[@placeholder='First name'])[1]]
+Session ID: f94164bac83ea2d9d5b59a26e2c2d33b <br/><br/>
+❌ <b>Test:</b> FormTester<br/>
+&nbsp;&nbsp; <b>URL:</b> https://broadridgedigital:broadridge1@www-dev.broadridge.com/who-we-serve/wealth-management  <br/>
+&nbsp;&nbsp; <b>Error:</b> element not interactable
+  (Session info: chrome=140.0.7339.207)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f94164bac83ea2d9d5b59a26e2c2d33b, sendKeysToElement {id=f.F2821306A86DA5683D24EDA3B2A516D5.d.3740F556FD43519211E9C50B69447EEE.e.422, value=[Ljava.lang.CharSequence;@7c72ecc}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.207, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: /tmp/chrome-user-data999276...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34111}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34111/devtoo..., se:cdpVersion: 140.0.7339.207, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (f94164bac83ea2d9d5b59a26e2c2d33b)] -> xpath: (//input[@placeholder='First name'])[1]]
+Session ID: f94164bac83ea2d9d5b59a26e2c2d33b <br/><br/>
+❌ <b>Test:</b> FormTester<br/>
+&nbsp;&nbsp; <b>URL:</b> https://broadridgedigital:broadridge1@www-dev.broadridge.com/who-we-serve/consumer-industries  <br/>
+&nbsp;&nbsp; <b>Error:</b> element not interactable
+  (Session info: chrome=140.0.7339.207)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f94164bac83ea2d9d5b59a26e2c2d33b, sendKeysToElement {id=f.F2821306A86DA5683D24EDA3B2A516D5.d.B24FBA0780DCFAC0B0164653F7E23F28.e.472, value=[Ljava.lang.CharSequence;@77ab22be}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.207, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: /tmp/chrome-user-data999276...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34111}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34111/devtoo..., se:cdpVersion: 140.0.7339.207, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (f94164bac83ea2d9d5b59a26e2c2d33b)] -> xpath: (//input[@placeholder='First name'])[1]]
+Session ID: f94164bac83ea2d9d5b59a26e2c2d33b <br/><br/>
