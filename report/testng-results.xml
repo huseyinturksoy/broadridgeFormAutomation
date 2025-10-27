@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="10" passed="1" failed="9" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-20T05:42:17 UTC" name="Surefire suite" finished-at="2025-10-20T05:44:36 UTC" duration-ms="139698">
+  <suite started-at="2025-10-27T05:44:14 UTC" name="Surefire suite" finished-at="2025-10-27T05:50:16 UTC" duration-ms="362488">
     <groups>
     </groups>
-    <test started-at="2025-10-20T05:42:17 UTC" name="Surefire test" finished-at="2025-10-20T05:44:36 UTC" duration-ms="139698">
+    <test started-at="2025-10-27T05:44:14 UTC" name="Surefire test" finished-at="2025-10-27T05:50:16 UTC" duration-ms="362488">
       <class name="com.broadridge.Tests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.broadridge.Tests@7ea37dbf]" started-at="2025-10-20T05:42:17 UTC" name="setUp" finished-at="2025-10-20T05:42:17 UTC" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-10-27T05:44:14 UTC" name="setUp" finished-at="2025-10-27T05:44:14 UTC" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@7ea37dbf]" started-at="2025-10-20T05:42:17 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-10-20T05:42:27 UTC" duration-ms="10223" status="FAIL">
+        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-10-27T05:44:14 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-10-27T05:45:00 UTC" duration-ms="45806" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -24,24 +24,17 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.devtools.DevToolsException">
+          <exception class="java.lang.IllegalArgumentException">
             <message>
-              <![CDATA[You are using a no-op implementation of the CDP. The most likely reason for this is that Selenium was unable to find an implementation of the CDP protocol that matches your browser. Please be sure to include an implementation on the classpath, possibly by adding a new (maven) dependency of `org.seleniumhq.selenium:selenium-devtools-vNN:4.32.0` where `NN` matches the major version of the browser you're using.
-Build info: version: '4.32.0', revision: 'd17c8aa950'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.14.0-1012-azure', java.version: '20.0.2'
-Driver info: DevTools Connection]]>
+              <![CDATA[argument "content" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.devtools.DevToolsException: You are using a no-op implementation of the CDP. The most likely reason for this is that Selenium was unable to find an implementation of the CDP protocol that matches your browser. Please be sure to include an implementation on the classpath, possibly by adding a new (maven) dependency of `org.seleniumhq.selenium:selenium-devtools-vNN:4.32.0` where `NN` matches the major version of the browser you're using.
-Build info: version: '4.32.0', revision: 'd17c8aa950'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.14.0-1012-azure', java.version: '20.0.2'
-Driver info: DevTools Connection
-at org.openqa.selenium.devtools.noop.NoOpDomains.target(NoOpDomains.java:60)
-at org.openqa.selenium.devtools.DevTools.findTarget(DevTools.java:199)
-at org.openqa.selenium.devtools.DevTools.createSession(DevTools.java:159)
-at org.openqa.selenium.devtools.DevTools.createSession(DevTools.java:145)
-at com.broadridge.utils.Driver.getDriver(Driver.java:67)
-at com.broadridge.Tests.FormTester(Tests.java:55)
+              <![CDATA[java.lang.IllegalArgumentException: argument "content" is null
+at com.fasterxml.jackson.databind.ObjectMapper._assertNotNull(ObjectMapper.java:5060)
+at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3278)
+at com.broadridge.utils.BrowserUtils.getJsonField(BrowserUtils.java:55)
+at com.broadridge.utils.BrowserUtils.headerContactUsFiller(BrowserUtils.java:116)
+at com.broadridge.Tests.FormTester(Tests.java:112)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -75,11 +68,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.devtools.DevToolsException -->
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FormTester -->
-        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@7ea37dbf]" started-at="2025-10-20T05:42:27 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-10-20T05:42:46 UTC" duration-ms="18787" status="FAIL">
+        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-10-27T05:45:00 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-10-27T05:45:25 UTC" duration-ms="25080" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -140,7 +133,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FormTester -->
-        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@7ea37dbf]" started-at="2025-10-20T05:42:46 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-10-20T05:43:02 UTC" duration-ms="16211" status="FAIL">
+        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-10-27T05:45:25 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-10-27T05:46:00 UTC" duration-ms="34950" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -201,7 +194,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FormTester -->
-        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@7ea37dbf]" started-at="2025-10-20T05:43:02 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-10-20T05:43:17 UTC" duration-ms="14966" status="FAIL">
+        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-10-27T05:46:00 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-10-27T05:46:36 UTC" duration-ms="36410" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -262,7 +255,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FormTester -->
-        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@7ea37dbf]" started-at="2025-10-20T05:43:17 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-10-20T05:43:32 UTC" duration-ms="14969" status="FAIL">
+        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-10-27T05:46:36 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-10-27T05:47:11 UTC" duration-ms="34752" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -323,7 +316,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FormTester -->
-        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@7ea37dbf]" started-at="2025-10-20T05:43:32 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-10-20T05:43:47 UTC" duration-ms="15055" status="FAIL">
+        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-10-27T05:47:11 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-10-27T05:47:46 UTC" duration-ms="34806" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -384,7 +377,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FormTester -->
-        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@7ea37dbf]" started-at="2025-10-20T05:43:47 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-10-20T05:44:02 UTC" duration-ms="14954" status="FAIL">
+        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-10-27T05:47:46 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-10-27T05:48:21 UTC" duration-ms="35096" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -445,7 +438,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FormTester -->
-        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@7ea37dbf]" started-at="2025-10-20T05:44:02 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-10-20T05:44:17 UTC" duration-ms="15039" status="FAIL">
+        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-10-27T05:48:21 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-10-27T05:48:56 UTC" duration-ms="34735" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -506,7 +499,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FormTester -->
-        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@7ea37dbf]" started-at="2025-10-20T05:44:17 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-10-20T05:44:32 UTC" duration-ms="15276" status="FAIL">
+        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-10-27T05:48:56 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-10-27T05:49:32 UTC" duration-ms="36440" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -567,7 +560,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FormTester -->
-        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@7ea37dbf]" started-at="2025-10-20T05:44:32 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-10-20T05:44:36 UTC" duration-ms="3831" status="PASS">
+        <test-method signature="FormTester(java.lang.String,java.lang.String)[pri:1, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-10-27T05:49:32 UTC" name="FormTester" data-provider="broadridgePages" finished-at="2025-10-27T05:50:16 UTC" duration-ms="44012" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -583,7 +576,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FormTester -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.broadridge.Tests@7ea37dbf]" started-at="2025-10-20T05:44:36 UTC" name="tearDown" finished-at="2025-10-20T05:44:36 UTC" duration-ms="335" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.broadridge.Tests@2cbb3d47]" started-at="2025-10-27T05:50:16 UTC" name="tearDown" finished-at="2025-10-27T05:50:16 UTC" duration-ms="354" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

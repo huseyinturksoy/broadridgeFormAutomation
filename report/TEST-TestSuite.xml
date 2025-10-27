@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="140.038" tests="10" errors="0" skipped="0" failures="9">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="362.82" tests="10" errors="0" skipped="0" failures="9">
   <properties>
     <property name="java.specification.version" value="20"/>
-    <property name="webdriver.chrome.driver" value="/home/runner/.cache/selenium/chromedriver/linux64/141.0.7390.78/chromedriver"/>
+    <property name="webdriver.chrome.driver" value="/home/runner/.cache/selenium/chromedriver/linux64/140.0.7339.207/chromedriver"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.class.path" value="/home/runner/work/broadridgeFormAutomation/broadridgeFormAutomation/target/test-classes:/home/runner/work/broadridgeFormAutomation/broadridgeFormAutomation/target/classes:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-java/4.32.0/selenium-java-4.32.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-api/4.32.0/selenium-api-4.32.0.jar:/home/runner/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.32.0/selenium-chrome-driver-4.32.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.32.0/selenium-chromium-driver-4.32.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.32.0/selenium-manager-4.32.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v135/4.32.0/selenium-devtools-v135-4.32.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v136/4.32.0/selenium-devtools-v136-4.32.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.32.0/selenium-edge-driver-4.32.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.32.0/selenium-firefox-driver-4.32.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-http/4.32.0/selenium-http-4.32.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.32.0/selenium-ie-driver-4.32.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.32.0/selenium-remote-driver-4.32.0.jar:/home/runner/.m2/repository/com/google/guava/guava/33.4.8-jre/guava-33.4.8-jre.jar:/home/runner/.m2/repository/com/google/guava/failureaccess/1.0.3/failureaccess-1.0.3.jar:/home/runner/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/runner/.m2/repository/com/google/errorprone/error_prone_annotations/2.36.0/error_prone_annotations-2.36.0.jar:/home/runner/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-api/1.49.0/opentelemetry-api-1.49.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-context/1.49.0/opentelemetry-context-1.49.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.49.0/opentelemetry-exporter-logging-1.49.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.49.0/opentelemetry-sdk-common-1.49.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.49.0/opentelemetry-sdk-extension-autoconfigure-spi-1.49.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.49.0/opentelemetry-sdk-extension-autoconfigure-1.49.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.49.0/opentelemetry-sdk-trace-1.49.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.49.0/opentelemetry-sdk-1.49.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.49.0/opentelemetry-sdk-metrics-1.49.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.49.0/opentelemetry-sdk-logs-1.49.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-os/4.32.0/selenium-os-4.32.0.jar:/home/runner/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.32.0/selenium-safari-driver-4.32.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-support/4.32.0/selenium-support-4.32.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v134/4.32.0/selenium-devtools-v134-4.32.0.jar:/home/runner/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-json/4.32.0/selenium-json-4.32.0.jar:/home/runner/.m2/repository/io/github/bonigarcia/webdrivermanager/5.8.0/webdrivermanager-5.8.0.jar:/home/runner/.m2/repository/org/slf4j/slf4j-api/2.0.12/slf4j-api-2.0.12.jar:/home/runner/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/home/runner/.m2/repository/com/github/docker-java/docker-java/3.3.6/docker-java-3.3.6.jar:/home/runner/.m2/repository/com/github/docker-java/docker-java-core/3.3.6/docker-java-core-3.3.6.jar:/home/runner/.m2/repository/com/github/docker-java/docker-java-api/3.3.6/docker-java-api-3.3.6.jar:/home/runner/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.76/bcpkix-jdk18on-1.76.jar:/home/runner/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.76/bcprov-jdk18on-1.76.jar:/home/runner/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.76/bcutil-jdk18on-1.76.jar:/home/runner/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/home/runner/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.6/docker-java-transport-httpclient5-3.3.6.jar:/home/runner/.m2/repository/com/github/docker-java/docker-java-transport/3.3.6/docker-java-transport-3.3.6.jar:/home/runner/.m2/repository/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar:/home/runner/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/home/runner/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/home/runner/.m2/repository/org/apache/commons/commons-compress/1.26.1/commons-compress-1.26.1.jar:/home/runner/.m2/repository/commons-codec/commons-codec/1.16.1/commons-codec-1.16.1.jar:/home/runner/.m2/repository/commons-io/commons-io/2.15.1/commons-io-2.15.1.jar:/home/runner/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/home/runner/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/home/runner/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/home/runner/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/home/runner/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/home/runner/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/home/runner/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar:/home/runner/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/home/runner/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/home/runner/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/home/runner/.m2/repository/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.0/jackson-databind-2.17.0.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.0/jackson-annotations-2.17.0.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.0/jackson-core-2.17.0.jar:/home/runner/.m2/repository/net/bytebuddy/byte-buddy/1.14.9/byte-buddy-1.14.9.jar:"/>
     <property name="java.vm.vendor" value="Eclipse Adoptium"/>
@@ -13,7 +13,7 @@
     <property name="java.vm.specification.version" value="20"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/20.0.2-9/x64/lib"/>
-    <property name="sun.java.command" value="/home/runner/work/broadridgeFormAutomation/broadridgeFormAutomation/target/surefire/surefirebooter-20251020054216649_3.jar /home/runner/work/broadridgeFormAutomation/broadridgeFormAutomation/target/surefire 2025-10-20T05-42-16_578-jvmRun1 surefire-20251020054216649_1tmp surefire_0-20251020054216649_2tmp"/>
+    <property name="sun.java.command" value="/home/runner/work/broadridgeFormAutomation/broadridgeFormAutomation/target/surefire/surefirebooter-20251027054414027_3.jar /home/runner/work/broadridgeFormAutomation/broadridgeFormAutomation/target/surefire 2025-10-27T05-44-13_955-jvmRun1 surefire-20251027054414027_1tmp surefire_0-20251027054414027_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/runner/work/broadridgeFormAutomation/broadridgeFormAutomation/target/test-classes:/home/runner/work/broadridgeFormAutomation/broadridgeFormAutomation/target/classes:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-java/4.32.0/selenium-java-4.32.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-api/4.32.0/selenium-api-4.32.0.jar:/home/runner/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.32.0/selenium-chrome-driver-4.32.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.32.0/selenium-chromium-driver-4.32.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.32.0/selenium-manager-4.32.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v135/4.32.0/selenium-devtools-v135-4.32.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v136/4.32.0/selenium-devtools-v136-4.32.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.32.0/selenium-edge-driver-4.32.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.32.0/selenium-firefox-driver-4.32.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-http/4.32.0/selenium-http-4.32.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.32.0/selenium-ie-driver-4.32.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.32.0/selenium-remote-driver-4.32.0.jar:/home/runner/.m2/repository/com/google/guava/guava/33.4.8-jre/guava-33.4.8-jre.jar:/home/runner/.m2/repository/com/google/guava/failureaccess/1.0.3/failureaccess-1.0.3.jar:/home/runner/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/runner/.m2/repository/com/google/errorprone/error_prone_annotations/2.36.0/error_prone_annotations-2.36.0.jar:/home/runner/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-api/1.49.0/opentelemetry-api-1.49.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-context/1.49.0/opentelemetry-context-1.49.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.49.0/opentelemetry-exporter-logging-1.49.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.49.0/opentelemetry-sdk-common-1.49.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.49.0/opentelemetry-sdk-extension-autoconfigure-spi-1.49.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.49.0/opentelemetry-sdk-extension-autoconfigure-1.49.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.49.0/opentelemetry-sdk-trace-1.49.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.49.0/opentelemetry-sdk-1.49.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.49.0/opentelemetry-sdk-metrics-1.49.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.49.0/opentelemetry-sdk-logs-1.49.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-os/4.32.0/selenium-os-4.32.0.jar:/home/runner/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.32.0/selenium-safari-driver-4.32.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-support/4.32.0/selenium-support-4.32.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v134/4.32.0/selenium-devtools-v134-4.32.0.jar:/home/runner/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-json/4.32.0/selenium-json-4.32.0.jar:/home/runner/.m2/repository/io/github/bonigarcia/webdrivermanager/5.8.0/webdrivermanager-5.8.0.jar:/home/runner/.m2/repository/org/slf4j/slf4j-api/2.0.12/slf4j-api-2.0.12.jar:/home/runner/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/home/runner/.m2/repository/com/github/docker-java/docker-java/3.3.6/docker-java-3.3.6.jar:/home/runner/.m2/repository/com/github/docker-java/docker-java-core/3.3.6/docker-java-core-3.3.6.jar:/home/runner/.m2/repository/com/github/docker-java/docker-java-api/3.3.6/docker-java-api-3.3.6.jar:/home/runner/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.76/bcpkix-jdk18on-1.76.jar:/home/runner/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.76/bcprov-jdk18on-1.76.jar:/home/runner/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.76/bcutil-jdk18on-1.76.jar:/home/runner/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/home/runner/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.6/docker-java-transport-httpclient5-3.3.6.jar:/home/runner/.m2/repository/com/github/docker-java/docker-java-transport/3.3.6/docker-java-transport-3.3.6.jar:/home/runner/.m2/repository/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar:/home/runner/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/home/runner/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/home/runner/.m2/repository/org/apache/commons/commons-compress/1.26.1/commons-compress-1.26.1.jar:/home/runner/.m2/repository/commons-codec/commons-codec/1.16.1/commons-codec-1.16.1.jar:/home/runner/.m2/repository/commons-io/commons-io/2.15.1/commons-io-2.15.1.jar:/home/runner/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/home/runner/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/home/runner/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/home/runner/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/home/runner/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/home/runner/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/home/runner/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar:/home/runner/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/home/runner/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/home/runner/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/home/runner/.m2/repository/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.0/jackson-databind-2.17.0.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.0/jackson-annotations-2.17.0.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.0/jackson-core-2.17.0.jar:/home/runner/.m2/repository/net/bytebuddy/byte-buddy/1.14.9/byte-buddy-1.14.9.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -28,13 +28,13 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/runner/work/broadridgeFormAutomation/broadridgeFormAutomation/target/surefire/surefirebooter-20251020054216649_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/runner/work/broadridgeFormAutomation/broadridgeFormAutomation/target/surefire/surefirebooter-20251027054414027_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="20.0.2+9"/>
     <property name="user.name" value="runner"/>
     <property name="stdout.encoding" value="UTF-8"/>
     <property name="path.separator" value=":"/>
-    <property name="os.version" value="6.14.0-1012-azure"/>
+    <property name="os.version" value="6.11.0-1018-azure"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
@@ -55,18 +55,13 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="64.0"/>
   </properties>
-  <testcase name="FormTester[https://broadridgedigital:broadridge1@www-dev.broadridge.com/2024-digital-transformation-study, https://www-dev.broadridge.com/2024-digital-transformation-study](1)" classname="com.broadridge.Tests" time="10.229">
-    <failure message="You are using a no-op implementation of the CDP. The most likely reason for this is that Selenium was unable to find an implementation of the CDP protocol that matches your browser. Please be sure to include an implementation on the classpath, possibly by adding a new (maven) dependency of `org.seleniumhq.selenium:selenium-devtools-vNN:4.32.0` where `NN` matches the major version of the browser you&apos;re using.&#10;Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.14.0-1012-azure&apos;, java.version: &apos;20.0.2&apos;&#10;Driver info: DevTools Connection" type="org.openqa.selenium.devtools.DevToolsException"><![CDATA[org.openqa.selenium.devtools.DevToolsException: 
-You are using a no-op implementation of the CDP. The most likely reason for this is that Selenium was unable to find an implementation of the CDP protocol that matches your browser. Please be sure to include an implementation on the classpath, possibly by adding a new (maven) dependency of `org.seleniumhq.selenium:selenium-devtools-vNN:4.32.0` where `NN` matches the major version of the browser you're using.
-Build info: version: '4.32.0', revision: 'd17c8aa950'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.14.0-1012-azure', java.version: '20.0.2'
-Driver info: DevTools Connection
-	at org.openqa.selenium.devtools.noop.NoOpDomains.target(NoOpDomains.java:60)
-	at org.openqa.selenium.devtools.DevTools.findTarget(DevTools.java:199)
-	at org.openqa.selenium.devtools.DevTools.createSession(DevTools.java:159)
-	at org.openqa.selenium.devtools.DevTools.createSession(DevTools.java:145)
-	at com.broadridge.utils.Driver.getDriver(Driver.java:67)
-	at com.broadridge.Tests.FormTester(Tests.java:55)
+  <testcase name="FormTester[https://broadridgedigital:broadridge1@www-dev.broadridge.com/2024-digital-transformation-study, https://www-dev.broadridge.com/2024-digital-transformation-study](1)" classname="com.broadridge.Tests" time="45.807">
+    <failure message="argument &quot;content&quot; is null" type="java.lang.IllegalArgumentException"><![CDATA[java.lang.IllegalArgumentException: argument "content" is null
+	at com.fasterxml.jackson.databind.ObjectMapper._assertNotNull(ObjectMapper.java:5060)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3278)
+	at com.broadridge.utils.BrowserUtils.getJsonField(BrowserUtils.java:55)
+	at com.broadridge.utils.BrowserUtils.headerContactUsFiller(BrowserUtils.java:116)
+	at com.broadridge.Tests.FormTester(Tests.java:112)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -101,17 +96,24 @@ Driver info: DevTools Connection
 ]]></failure>
     <system-out><![CDATA[-------------------------------TEST STARTED--------------------------------
 page URL = https://broadridgedigital:broadridge1@www-dev.broadridge.com/2024-digital-transformation-study
+current URL = https://broadridgedigital:broadridge1@www-dev.broadridge.com/2024-digital-transformation-study
+header ContactUs button found = true
+v1 ContactUs form found = true
+v2 ContactUs form not found
+v2 download form not found
+emailTimeStamp = automated_TESTTEST_2025-10-27_05_44_52@broadridge.com
+................Header Contact Us Form Filled...................
+form message = Something went wrong with our form submission. Please try again.
+formpayload for validation = null
 ]]></system-out>
     <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
 SLF4J(W): Defaulting to no-operation (NOP) logger implementation
 SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
-Oct 20, 2025 5:42:27 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 141
-Oct 20, 2025 5:42:27 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
-WARNING: Unable to find version of CDP to use for 141.0.7390.107. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.32.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Oct 27, 2025 5:44:22 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 140, returning the closest version; found: 136; Please update to a Selenium version that supports CDP version 140
 ]]></system-err>
   </testcase>
-  <testcase name="FormTester[https://broadridgedigital:broadridge1@www-dev.broadridge.com/insight-pages/bpo-case-study, https://www-dev.broadridge.com/insight-pages/bpo-case-study](2)" classname="com.broadridge.Tests" time="18.786">
+  <testcase name="FormTester[https://broadridgedigital:broadridge1@www-dev.broadridge.com/insight-pages/bpo-case-study, https://www-dev.broadridge.com/insight-pages/bpo-case-study](2)" classname="com.broadridge.Tests" time="25.08">
     <failure message="argument &quot;content&quot; is null" type="java.lang.IllegalArgumentException"><![CDATA[java.lang.IllegalArgumentException: argument "content" is null
 	at com.fasterxml.jackson.databind.ObjectMapper._assertNotNull(ObjectMapper.java:5060)
 	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3278)
@@ -156,13 +158,13 @@ header ContactUs button found = true
 v1 ContactUs form found = true
 v2 ContactUs form found = true
 v2 download form not found
-emailTimeStamp = automated_TESTTEST_2025-10-20_05_42_37@broadridge.com
+emailTimeStamp = automated_TESTTEST_2025-10-27_05_45_17@broadridge.com
 ................Header Contact Us Form Filled...................
 form message = Something went wrong with our form submission. Please try again.
 formpayload for validation = null
 ]]></system-out>
   </testcase>
-  <testcase name="FormTester[https://broadridgedigital:broadridge1@www-dev.broadridge.com/article/asset-management/summary-of-latest-guidance-from-the-fca-on-consumer-duty-implementation, https://www-dev.broadridge.com/article/asset-management/summary-of-latest-guidance-from-the-fca-on-consumer-duty-implementation](3)" classname="com.broadridge.Tests" time="16.211">
+  <testcase name="FormTester[https://broadridgedigital:broadridge1@www-dev.broadridge.com/article/asset-management/summary-of-latest-guidance-from-the-fca-on-consumer-duty-implementation, https://www-dev.broadridge.com/article/asset-management/summary-of-latest-guidance-from-the-fca-on-consumer-duty-implementation](3)" classname="com.broadridge.Tests" time="34.949">
     <failure message="argument &quot;content&quot; is null" type="java.lang.IllegalArgumentException"><![CDATA[java.lang.IllegalArgumentException: argument "content" is null
 	at com.fasterxml.jackson.databind.ObjectMapper._assertNotNull(ObjectMapper.java:5060)
 	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3278)
@@ -207,13 +209,13 @@ header ContactUs button found = true
 v1 ContactUs form found = true
 v2 ContactUs form not found
 v2 download form not found
-emailTimeStamp = automated_TESTTEST_2025-10-20_05_42_54@broadridge.com
+emailTimeStamp = automated_TESTTEST_2025-10-27_05_45_52@broadridge.com
 ................Header Contact Us Form Filled...................
 form message = Something went wrong with our form submission. Please try again.
 formpayload for validation = null
 ]]></system-out>
   </testcase>
-  <testcase name="FormTester[https://broadridgedigital:broadridge1@www-dev.broadridge.com/insight-pages/governance-regulatory-change, https://www-dev.broadridge.com/insight-pages/governance-regulatory-change](4)" classname="com.broadridge.Tests" time="14.967">
+  <testcase name="FormTester[https://broadridgedigital:broadridge1@www-dev.broadridge.com/insight-pages/governance-regulatory-change, https://www-dev.broadridge.com/insight-pages/governance-regulatory-change](4)" classname="com.broadridge.Tests" time="36.412">
     <failure message="argument &quot;content&quot; is null" type="java.lang.IllegalArgumentException"><![CDATA[java.lang.IllegalArgumentException: argument "content" is null
 	at com.fasterxml.jackson.databind.ObjectMapper._assertNotNull(ObjectMapper.java:5060)
 	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3278)
@@ -258,13 +260,13 @@ header ContactUs button found = true
 v1 ContactUs form not found
 v2 ContactUs form found = true
 v2 download form not found
-emailTimeStamp = automated_TESTTEST_2025-10-20_05_43_09@broadridge.com
+emailTimeStamp = automated_TESTTEST_2025-10-27_05_46_27@broadridge.com
 ................Header Contact Us Form Filled...................
 form message = Something went wrong with our form submission. Please try again.
 formpayload for validation = null
 ]]></system-out>
   </testcase>
-  <testcase name="FormTester[https://broadridgedigital:broadridge1@www-dev.broadridge.com/campaign/all-in-the-family-active-etf, https://www-dev.broadridge.com/campaign/all-in-the-family-active-etf](5)" classname="com.broadridge.Tests" time="14.97">
+  <testcase name="FormTester[https://broadridgedigital:broadridge1@www-dev.broadridge.com/campaign/all-in-the-family-active-etf, https://www-dev.broadridge.com/campaign/all-in-the-family-active-etf](5)" classname="com.broadridge.Tests" time="34.752">
     <failure message="argument &quot;content&quot; is null" type="java.lang.IllegalArgumentException"><![CDATA[java.lang.IllegalArgumentException: argument "content" is null
 	at com.fasterxml.jackson.databind.ObjectMapper._assertNotNull(ObjectMapper.java:5060)
 	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3278)
@@ -309,13 +311,13 @@ header ContactUs button found = true
 v1 ContactUs form not found
 v2 ContactUs form not found
 v2 download form found = true
-emailTimeStamp = automated_TESTTEST_2025-10-20_05_43_24@broadridge.com
+emailTimeStamp = automated_TESTTEST_2025-10-27_05_47_03@broadridge.com
 ................Header Contact Us Form Filled...................
 form message = Something went wrong with our form submission. Please try again.
 formpayload for validation = null
 ]]></system-out>
   </testcase>
-  <testcase name="FormTester[https://broadridgedigital:broadridge1@www-dev.broadridge.com/who-we-serve/asset-management, https://www-dev.broadridge.com/who-we-serve/asset-management](6)" classname="com.broadridge.Tests" time="15.056">
+  <testcase name="FormTester[https://broadridgedigital:broadridge1@www-dev.broadridge.com/who-we-serve/asset-management, https://www-dev.broadridge.com/who-we-serve/asset-management](6)" classname="com.broadridge.Tests" time="34.806">
     <failure message="argument &quot;content&quot; is null" type="java.lang.IllegalArgumentException"><![CDATA[java.lang.IllegalArgumentException: argument "content" is null
 	at com.fasterxml.jackson.databind.ObjectMapper._assertNotNull(ObjectMapper.java:5060)
 	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3278)
@@ -360,13 +362,13 @@ header ContactUs button found = true
 v1 ContactUs form not found
 v2 ContactUs form found = true
 v2 download form not found
-emailTimeStamp = automated_TESTTEST_2025-10-20_05_43_39@broadridge.com
+emailTimeStamp = automated_TESTTEST_2025-10-27_05_47_38@broadridge.com
 ................Header Contact Us Form Filled...................
 form message = Something went wrong with our form submission. Please try again.
 formpayload for validation = null
 ]]></system-out>
   </testcase>
-  <testcase name="FormTester[https://broadridgedigital:broadridge1@www-dev.broadridge.com/who-we-serve/wealth-management, https://www-dev.broadridge.com/who-we-serve/wealth-management](7)" classname="com.broadridge.Tests" time="14.955">
+  <testcase name="FormTester[https://broadridgedigital:broadridge1@www-dev.broadridge.com/who-we-serve/wealth-management, https://www-dev.broadridge.com/who-we-serve/wealth-management](7)" classname="com.broadridge.Tests" time="35.098">
     <failure message="argument &quot;content&quot; is null" type="java.lang.IllegalArgumentException"><![CDATA[java.lang.IllegalArgumentException: argument "content" is null
 	at com.fasterxml.jackson.databind.ObjectMapper._assertNotNull(ObjectMapper.java:5060)
 	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3278)
@@ -411,13 +413,13 @@ header ContactUs button found = true
 v1 ContactUs form not found
 v2 ContactUs form found = true
 v2 download form not found
-emailTimeStamp = automated_TESTTEST_2025-10-20_05_43_54@broadridge.com
+emailTimeStamp = automated_TESTTEST_2025-10-27_05_48_13@broadridge.com
 ................Header Contact Us Form Filled...................
 form message = Something went wrong with our form submission. Please try again.
 formpayload for validation = null
 ]]></system-out>
   </testcase>
-  <testcase name="FormTester[https://broadridgedigital:broadridge1@www-dev.broadridge.com/who-we-serve/consumer-industries, https://www-dev.broadridge.com/who-we-serve/consumer-industries](8)" classname="com.broadridge.Tests" time="15.04">
+  <testcase name="FormTester[https://broadridgedigital:broadridge1@www-dev.broadridge.com/who-we-serve/consumer-industries, https://www-dev.broadridge.com/who-we-serve/consumer-industries](8)" classname="com.broadridge.Tests" time="34.734">
     <failure message="argument &quot;content&quot; is null" type="java.lang.IllegalArgumentException"><![CDATA[java.lang.IllegalArgumentException: argument "content" is null
 	at com.fasterxml.jackson.databind.ObjectMapper._assertNotNull(ObjectMapper.java:5060)
 	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3278)
@@ -462,13 +464,13 @@ header ContactUs button found = true
 v1 ContactUs form not found
 v2 ContactUs form found = true
 v2 download form not found
-emailTimeStamp = automated_TESTTEST_2025-10-20_05_44_09@broadridge.com
+emailTimeStamp = automated_TESTTEST_2025-10-27_05_48_48@broadridge.com
 ................Header Contact Us Form Filled...................
 form message = Something went wrong with our form submission. Please try again.
 formpayload for validation = null
 ]]></system-out>
   </testcase>
-  <testcase name="FormTester[https://broadridgedigital:broadridge1@www.broadridge.com/insight-pages/broadridge-insights, https://www.broadridge.com/insight-pages/broadridge-insights](9)" classname="com.broadridge.Tests" time="15.276">
+  <testcase name="FormTester[https://broadridgedigital:broadridge1@www.broadridge.com/insight-pages/broadridge-insights, https://www.broadridge.com/insight-pages/broadridge-insights](9)" classname="com.broadridge.Tests" time="36.44">
     <failure message="argument &quot;content&quot; is null" type="java.lang.IllegalArgumentException"><![CDATA[java.lang.IllegalArgumentException: argument "content" is null
 	at com.fasterxml.jackson.databind.ObjectMapper._assertNotNull(ObjectMapper.java:5060)
 	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3278)
@@ -513,14 +515,14 @@ header ContactUs button found = true
 v1 ContactUs form not found
 v2 ContactUs form found = true
 v2 download form not found
-emailTimeStamp = automated_TESTTEST_2025-10-20_05_44_24@broadridge.com
+emailTimeStamp = automated_TESTTEST_2025-10-27_05_49_23@broadridge.com
 ................Header Contact Us Form Filled...................
 form message = Thank you for your interest in Broadridge.
 A representative will contact you within 24 business hours.
 formpayload for validation = null
 ]]></system-out>
   </testcase>
-  <testcase name="FormTester[https://broadridgedigital:broadridge1@www-dev.broadridge.com/financial-services/asset-management/retirement-services/fiduciary-software-and-technology/fiduciary-focus-toolkit, https://www-dev.broadridge.com/financial-services/asset-management/retirement-services/fiduciary-software-and-technology/fiduciary-focus-toolkit](10)" classname="com.broadridge.Tests" time="3.831">
+  <testcase name="FormTester[https://broadridgedigital:broadridge1@www-dev.broadridge.com/financial-services/asset-management/retirement-services/fiduciary-software-and-technology/fiduciary-focus-toolkit, https://www-dev.broadridge.com/financial-services/asset-management/retirement-services/fiduciary-software-and-technology/fiduciary-focus-toolkit](10)" classname="com.broadridge.Tests" time="44.012">
     <system-out><![CDATA[page URL = https://broadridgedigital:broadridge1@www-dev.broadridge.com/financial-services/asset-management/retirement-services/fiduciary-software-and-technology/fiduciary-focus-toolkit
 current URL = https://broadridgedigital:broadridge1@www-dev.broadridge.com/financial-services/asset-management/retirement-services/fiduciary-software-and-technology/fiduciary-focus-toolkit
 Header ContactUs button not found
