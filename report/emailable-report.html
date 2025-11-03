@@ -9,35 +9,23 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">9</td><td class="num">362,488</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">9</td><td class="num">140,180</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="9">com.broadridge.Tests</td><td><a href="#m0">FormTester</a></td><td rowspan="9">1761543854538</td><td rowspan="9">45806</td></tr><tr class="failedeven"><td><a href="#m1">FormTester</a></td></tr><tr class="failedeven"><td><a href="#m2">FormTester</a></td></tr><tr class="failedeven"><td><a href="#m3">FormTester</a></td></tr><tr class="failedeven"><td><a href="#m4">FormTester</a></td></tr><tr class="failedeven"><td><a href="#m5">FormTester</a></td></tr><tr class="failedeven"><td><a href="#m6">FormTester</a></td></tr><tr class="failedeven"><td><a href="#m7">FormTester</a></td></tr><tr class="failedeven"><td><a href="#m8">FormTester</a></td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.broadridge.Tests</td><td><a href="#m9">FormTester</a></td><td rowspan="1">1761544172625</td><td rowspan="1">44012</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="9">com.broadridge.Tests</td><td><a href="#m0">FormTester</a></td><td rowspan="9">1762148620265</td><td rowspan="9">7971</td></tr><tr class="failedeven"><td><a href="#m1">FormTester</a></td></tr><tr class="failedeven"><td><a href="#m2">FormTester</a></td></tr><tr class="failedeven"><td><a href="#m3">FormTester</a></td></tr><tr class="failedeven"><td><a href="#m4">FormTester</a></td></tr><tr class="failedeven"><td><a href="#m5">FormTester</a></td></tr><tr class="failedeven"><td><a href="#m6">FormTester</a></td></tr><tr class="failedeven"><td><a href="#m7">FormTester</a></td></tr><tr class="failedeven"><td><a href="#m8">FormTester</a></td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.broadridge.Tests</td><td><a href="#m9">FormTester</a></td><td rowspan="1">1762148756090</td><td rowspan="1">3999</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">com.broadridge.Tests#FormTester</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>https://broadridgedigital:broadridge1@www-dev.broadridge.com/2024-digital-transformation-study</td><td>https://www-dev.broadridge.com/2024-digital-transformation-study</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.IllegalArgumentException: argument &quot;content&quot; is null
-	at com.fasterxml.jackson.databind.ObjectMapper._assertNotNull(ObjectMapper.java:5060)
-	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3278)
-	at com.broadridge.utils.BrowserUtils.getJsonField(BrowserUtils.java:55)
-	at com.broadridge.utils.BrowserUtils.headerContactUsFiller(BrowserUtils.java:116)
-	at com.broadridge.Tests.FormTester(Tests.java:112)
+<h2>Surefire test</h2><h3 id="m0">com.broadridge.Tests#FormTester</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>https://broadridgedigital:broadridge1@www-dev.broadridge.com/2024-digital-transformation-study</td><td>https://www-dev.broadridge.com/2024-digital-transformation-study</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.devtools.DevToolsException: You are using a no-op implementation of the CDP. The most likely reason for this is that Selenium was unable to find an implementation of the CDP protocol that matches your browser. Please be sure to include an implementation on the classpath, possibly by adding a new (maven) dependency of `org.seleniumhq.selenium:selenium-devtools-vNN:4.32.0` where `NN` matches the major version of the browser you&apos;re using.
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.11.0-1018-azure&apos;, java.version: &apos;20.0.2&apos;
+Driver info: DevTools Connection
+	at org.openqa.selenium.devtools.noop.NoOpDomains.target(NoOpDomains.java:60)
+	at org.openqa.selenium.devtools.DevTools.findTarget(DevTools.java:199)
+	at org.openqa.selenium.devtools.DevTools.createSession(DevTools.java:159)
+	at org.openqa.selenium.devtools.DevTools.createSession(DevTools.java:145)
+	at com.broadridge.utils.Driver.getDriver(Driver.java:67)
+	at com.broadridge.Tests.FormTester(Tests.java:55)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.broadridge.Tests#FormTester</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>https://broadridgedigital:broadridge1@www-dev.broadridge.com/insight-pages/governance-regulatory-change</td><td>https://www-dev.broadridge.com/insight-pages/governance-regulatory-change</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.IllegalArgumentException: argument &quot;content&quot; is null
-	at com.fasterxml.jackson.databind.ObjectMapper._assertNotNull(ObjectMapper.java:5060)
-	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3278)
-	at com.broadridge.utils.BrowserUtils.getJsonField(BrowserUtils.java:55)
-	at com.broadridge.utils.BrowserUtils.headerContactUsFiller(BrowserUtils.java:116)
-	at com.broadridge.Tests.FormTester(Tests.java:109)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.broadridge.Tests#FormTester</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>https://broadridgedigital:broadridge1@www-dev.broadridge.com/who-we-serve/asset-management</td><td>https://www-dev.broadridge.com/who-we-serve/asset-management</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.IllegalArgumentException: argument &quot;content&quot; is null
-	at com.fasterxml.jackson.databind.ObjectMapper._assertNotNull(ObjectMapper.java:5060)
-	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3278)
-	at com.broadridge.utils.BrowserUtils.getJsonField(BrowserUtils.java:55)
-	at com.broadridge.utils.BrowserUtils.headerContactUsFiller(BrowserUtils.java:116)
-	at com.broadridge.Tests.FormTester(Tests.java:109)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.broadridge.Tests#FormTester</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>https://broadridgedigital:broadridge1@www-dev.broadridge.com/insight-pages/bpo-case-study</td><td>https://www-dev.broadridge.com/insight-pages/bpo-case-study</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.IllegalArgumentException: argument &quot;content&quot; is null
+<h3 id="m1">com.broadridge.Tests#FormTester</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>https://broadridgedigital:broadridge1@www-dev.broadridge.com/who-we-serve/asset-management</td><td>https://www-dev.broadridge.com/who-we-serve/asset-management</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.IllegalArgumentException: argument &quot;content&quot; is null
 	at com.fasterxml.jackson.databind.ObjectMapper._assertNotNull(ObjectMapper.java:5060)
 	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3278)
 	at com.broadridge.utils.BrowserUtils.getJsonField(BrowserUtils.java:55)
@@ -45,15 +33,7 @@
 	at com.broadridge.Tests.FormTester(Tests.java:109)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.broadridge.Tests#FormTester</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>https://broadridgedigital:broadridge1@www-dev.broadridge.com/who-we-serve/consumer-industries</td><td>https://www-dev.broadridge.com/who-we-serve/consumer-industries</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.IllegalArgumentException: argument &quot;content&quot; is null
-	at com.fasterxml.jackson.databind.ObjectMapper._assertNotNull(ObjectMapper.java:5060)
-	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3278)
-	at com.broadridge.utils.BrowserUtils.getJsonField(BrowserUtils.java:55)
-	at com.broadridge.utils.BrowserUtils.headerContactUsFiller(BrowserUtils.java:116)
-	at com.broadridge.Tests.FormTester(Tests.java:109)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.broadridge.Tests#FormTester</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>https://broadridgedigital:broadridge1@www-dev.broadridge.com/campaign/all-in-the-family-active-etf</td><td>https://www-dev.broadridge.com/campaign/all-in-the-family-active-etf</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.IllegalArgumentException: argument &quot;content&quot; is null
+<h3 id="m2">com.broadridge.Tests#FormTester</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>https://broadridgedigital:broadridge1@www-dev.broadridge.com/campaign/all-in-the-family-active-etf</td><td>https://www-dev.broadridge.com/campaign/all-in-the-family-active-etf</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.IllegalArgumentException: argument &quot;content&quot; is null
 	at com.fasterxml.jackson.databind.ObjectMapper._assertNotNull(ObjectMapper.java:5060)
 	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3278)
 	at com.broadridge.utils.BrowserUtils.getJsonField(BrowserUtils.java:55)
@@ -61,12 +41,36 @@
 	at com.broadridge.Tests.FormTester(Tests.java:115)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.broadridge.Tests#FormTester</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>https://broadridgedigital:broadridge1@www-dev.broadridge.com/who-we-serve/wealth-management</td><td>https://www-dev.broadridge.com/who-we-serve/wealth-management</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.IllegalArgumentException: argument &quot;content&quot; is null
+<h3 id="m3">com.broadridge.Tests#FormTester</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>https://broadridgedigital:broadridge1@www-dev.broadridge.com/insight-pages/governance-regulatory-change</td><td>https://www-dev.broadridge.com/insight-pages/governance-regulatory-change</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.IllegalArgumentException: argument &quot;content&quot; is null
 	at com.fasterxml.jackson.databind.ObjectMapper._assertNotNull(ObjectMapper.java:5060)
 	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3278)
 	at com.broadridge.utils.BrowserUtils.getJsonField(BrowserUtils.java:55)
 	at com.broadridge.utils.BrowserUtils.headerContactUsFiller(BrowserUtils.java:116)
 	at com.broadridge.Tests.FormTester(Tests.java:109)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.broadridge.Tests#FormTester</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>https://broadridgedigital:broadridge1@www-dev.broadridge.com/who-we-serve/wealth-management</td><td>https://www-dev.broadridge.com/who-we-serve/wealth-management</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.IllegalArgumentException: argument &quot;content&quot; is null
+	at com.fasterxml.jackson.databind.ObjectMapper._assertNotNull(ObjectMapper.java:5060)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3278)
+	at com.broadridge.utils.BrowserUtils.getJsonField(BrowserUtils.java:55)
+	at com.broadridge.utils.BrowserUtils.headerContactUsFiller(BrowserUtils.java:116)
+	at com.broadridge.Tests.FormTester(Tests.java:109)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.broadridge.Tests#FormTester</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>https://broadridgedigital:broadridge1@www-dev.broadridge.com/insight-pages/bpo-case-study</td><td>https://www-dev.broadridge.com/insight-pages/bpo-case-study</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.IllegalArgumentException: argument &quot;content&quot; is null
+	at com.fasterxml.jackson.databind.ObjectMapper._assertNotNull(ObjectMapper.java:5060)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3278)
+	at com.broadridge.utils.BrowserUtils.getJsonField(BrowserUtils.java:55)
+	at com.broadridge.utils.BrowserUtils.headerContactUsFiller(BrowserUtils.java:116)
+	at com.broadridge.Tests.FormTester(Tests.java:109)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.broadridge.Tests#FormTester</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>https://broadridgedigital:broadridge1@www-dev.broadridge.com/article/asset-management/summary-of-latest-guidance-from-the-fca-on-consumer-duty-implementation</td><td>https://www-dev.broadridge.com/article/asset-management/summary-of-latest-guidance-from-the-fca-on-consumer-duty-implementation</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.IllegalArgumentException: argument &quot;content&quot; is null
+	at com.fasterxml.jackson.databind.ObjectMapper._assertNotNull(ObjectMapper.java:5060)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3278)
+	at com.broadridge.utils.BrowserUtils.getJsonField(BrowserUtils.java:55)
+	at com.broadridge.utils.BrowserUtils.headerContactUsFiller(BrowserUtils.java:116)
+	at com.broadridge.Tests.FormTester(Tests.java:112)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m7">com.broadridge.Tests#FormTester</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>https://broadridgedigital:broadridge1@www.broadridge.com/insight-pages/broadridge-insights</td><td>https://www.broadridge.com/insight-pages/broadridge-insights</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.IllegalArgumentException: argument &quot;content&quot; is null
@@ -77,12 +81,12 @@
 	at com.broadridge.Tests.FormTester(Tests.java:109)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">com.broadridge.Tests#FormTester</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>https://broadridgedigital:broadridge1@www-dev.broadridge.com/article/asset-management/summary-of-latest-guidance-from-the-fca-on-consumer-duty-implementation</td><td>https://www-dev.broadridge.com/article/asset-management/summary-of-latest-guidance-from-the-fca-on-consumer-duty-implementation</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.IllegalArgumentException: argument &quot;content&quot; is null
+<h3 id="m8">com.broadridge.Tests#FormTester</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>https://broadridgedigital:broadridge1@www-dev.broadridge.com/who-we-serve/consumer-industries</td><td>https://www-dev.broadridge.com/who-we-serve/consumer-industries</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.IllegalArgumentException: argument &quot;content&quot; is null
 	at com.fasterxml.jackson.databind.ObjectMapper._assertNotNull(ObjectMapper.java:5060)
 	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3278)
 	at com.broadridge.utils.BrowserUtils.getJsonField(BrowserUtils.java:55)
 	at com.broadridge.utils.BrowserUtils.headerContactUsFiller(BrowserUtils.java:116)
-	at com.broadridge.Tests.FormTester(Tests.java:112)
+	at com.broadridge.Tests.FormTester(Tests.java:109)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m9">com.broadridge.Tests#FormTester</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>https://broadridgedigital:broadridge1@www-dev.broadridge.com/financial-services/asset-management/retirement-services/fiduciary-software-and-technology/fiduciary-focus-toolkit</td><td>https://www-dev.broadridge.com/financial-services/asset-management/retirement-services/fiduciary-software-and-technology/fiduciary-focus-toolkit</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
