@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 140.0 s <<< FAILURE! -- in TestSuite
-com.broadridge.Tests.FormTester[https://broadridgedigital:broadridge1@www-dev.broadridge.com/2024-digital-transformation-study, https://www-dev.broadridge.com/2024-digital-transformation-study](1) -- Time elapsed: 11.65 s <<< FAILURE!
+Tests run: 10, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 132.3 s <<< FAILURE! -- in TestSuite
+com.broadridge.Tests.FormTester[https://broadridgedigital:broadridge1@www-dev.broadridge.com/2024-digital-transformation-study, https://www-dev.broadridge.com/2024-digital-transformation-study](1) -- Time elapsed: 3.299 s <<< FAILURE!
 org.openqa.selenium.devtools.DevToolsException: 
 You are using a no-op implementation of the CDP. The most likely reason for this is that Selenium was unable to find an implementation of the CDP protocol that matches your browser. Please be sure to include an implementation on the classpath, possibly by adding a new (maven) dependency of `org.seleniumhq.selenium:selenium-devtools-vNN:4.32.0` where `NN` matches the major version of the browser you're using.
 Build info: version: '4.32.0', revision: 'd17c8aa950'
@@ -46,7 +46,7 @@ Driver info: DevTools Connection
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.broadridge.Tests.FormTester[https://broadridgedigital:broadridge1@www-dev.broadridge.com/insight-pages/bpo-case-study, https://www-dev.broadridge.com/insight-pages/bpo-case-study](2) -- Time elapsed: 17.20 s <<< FAILURE!
+com.broadridge.Tests.FormTester[https://broadridgedigital:broadridge1@www-dev.broadridge.com/insight-pages/bpo-case-study, https://www-dev.broadridge.com/insight-pages/bpo-case-study](2) -- Time elapsed: 17.01 s <<< FAILURE!
 java.lang.IllegalArgumentException: argument "content" is null
 	at com.fasterxml.jackson.databind.ObjectMapper._assertNotNull(ObjectMapper.java:5060)
 	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3278)
@@ -85,7 +85,7 @@ java.lang.IllegalArgumentException: argument "content" is null
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.broadridge.Tests.FormTester[https://broadridgedigital:broadridge1@www-dev.broadridge.com/article/asset-management/summary-of-latest-guidance-from-the-fca-on-consumer-duty-implementation, https://www-dev.broadridge.com/article/asset-management/summary-of-latest-guidance-from-the-fca-on-consumer-duty-implementation](3) -- Time elapsed: 15.80 s <<< FAILURE!
+com.broadridge.Tests.FormTester[https://broadridgedigital:broadridge1@www-dev.broadridge.com/article/asset-management/summary-of-latest-guidance-from-the-fca-on-consumer-duty-implementation, https://www-dev.broadridge.com/article/asset-management/summary-of-latest-guidance-from-the-fca-on-consumer-duty-implementation](3) -- Time elapsed: 16.22 s <<< FAILURE!
 java.lang.IllegalArgumentException: argument "content" is null
 	at com.fasterxml.jackson.databind.ObjectMapper._assertNotNull(ObjectMapper.java:5060)
 	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3278)
@@ -124,7 +124,7 @@ java.lang.IllegalArgumentException: argument "content" is null
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.broadridge.Tests.FormTester[https://broadridgedigital:broadridge1@www-dev.broadridge.com/insight-pages/governance-regulatory-change, https://www-dev.broadridge.com/insight-pages/governance-regulatory-change](4) -- Time elapsed: 15.08 s <<< FAILURE!
+com.broadridge.Tests.FormTester[https://broadridgedigital:broadridge1@www-dev.broadridge.com/insight-pages/governance-regulatory-change, https://www-dev.broadridge.com/insight-pages/governance-regulatory-change](4) -- Time elapsed: 15.31 s <<< FAILURE!
 java.lang.IllegalArgumentException: argument "content" is null
 	at com.fasterxml.jackson.databind.ObjectMapper._assertNotNull(ObjectMapper.java:5060)
 	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3278)
@@ -163,7 +163,7 @@ java.lang.IllegalArgumentException: argument "content" is null
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.broadridge.Tests.FormTester[https://broadridgedigital:broadridge1@www-dev.broadridge.com/campaign/all-in-the-family-active-etf, https://www-dev.broadridge.com/campaign/all-in-the-family-active-etf](5) -- Time elapsed: 15.12 s <<< FAILURE!
+com.broadridge.Tests.FormTester[https://broadridgedigital:broadridge1@www-dev.broadridge.com/campaign/all-in-the-family-active-etf, https://www-dev.broadridge.com/campaign/all-in-the-family-active-etf](5) -- Time elapsed: 15.22 s <<< FAILURE!
 java.lang.IllegalArgumentException: argument "content" is null
 	at com.fasterxml.jackson.databind.ObjectMapper._assertNotNull(ObjectMapper.java:5060)
 	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3278)
@@ -202,7 +202,7 @@ java.lang.IllegalArgumentException: argument "content" is null
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.broadridge.Tests.FormTester[https://broadridgedigital:broadridge1@www-dev.broadridge.com/who-we-serve/asset-management, https://www-dev.broadridge.com/who-we-serve/asset-management](6) -- Time elapsed: 15.26 s <<< FAILURE!
+com.broadridge.Tests.FormTester[https://broadridgedigital:broadridge1@www-dev.broadridge.com/who-we-serve/asset-management, https://www-dev.broadridge.com/who-we-serve/asset-management](6) -- Time elapsed: 15.15 s <<< FAILURE!
 java.lang.IllegalArgumentException: argument "content" is null
 	at com.fasterxml.jackson.databind.ObjectMapper._assertNotNull(ObjectMapper.java:5060)
 	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3278)
@@ -241,7 +241,7 @@ java.lang.IllegalArgumentException: argument "content" is null
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.broadridge.Tests.FormTester[https://broadridgedigital:broadridge1@www-dev.broadridge.com/who-we-serve/wealth-management, https://www-dev.broadridge.com/who-we-serve/wealth-management](7) -- Time elapsed: 15.06 s <<< FAILURE!
+com.broadridge.Tests.FormTester[https://broadridgedigital:broadridge1@www-dev.broadridge.com/who-we-serve/wealth-management, https://www-dev.broadridge.com/who-we-serve/wealth-management](7) -- Time elapsed: 15.15 s <<< FAILURE!
 java.lang.IllegalArgumentException: argument "content" is null
 	at com.fasterxml.jackson.databind.ObjectMapper._assertNotNull(ObjectMapper.java:5060)
 	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3278)
@@ -280,7 +280,7 @@ java.lang.IllegalArgumentException: argument "content" is null
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.broadridge.Tests.FormTester[https://broadridgedigital:broadridge1@www-dev.broadridge.com/who-we-serve/consumer-industries, https://www-dev.broadridge.com/who-we-serve/consumer-industries](8) -- Time elapsed: 14.89 s <<< FAILURE!
+com.broadridge.Tests.FormTester[https://broadridgedigital:broadridge1@www-dev.broadridge.com/who-we-serve/consumer-industries, https://www-dev.broadridge.com/who-we-serve/consumer-industries](8) -- Time elapsed: 15.06 s <<< FAILURE!
 java.lang.IllegalArgumentException: argument "content" is null
 	at com.fasterxml.jackson.databind.ObjectMapper._assertNotNull(ObjectMapper.java:5060)
 	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3278)
@@ -319,7 +319,7 @@ java.lang.IllegalArgumentException: argument "content" is null
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.broadridge.Tests.FormTester[https://broadridgedigital:broadridge1@www.broadridge.com/insight-pages/broadridge-insights, https://www.broadridge.com/insight-pages/broadridge-insights](9) -- Time elapsed: 15.61 s <<< FAILURE!
+com.broadridge.Tests.FormTester[https://broadridgedigital:broadridge1@www.broadridge.com/insight-pages/broadridge-insights, https://www.broadridge.com/insight-pages/broadridge-insights](9) -- Time elapsed: 15.59 s <<< FAILURE!
 java.lang.IllegalArgumentException: argument "content" is null
 	at com.fasterxml.jackson.databind.ObjectMapper._assertNotNull(ObjectMapper.java:5060)
 	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3278)
