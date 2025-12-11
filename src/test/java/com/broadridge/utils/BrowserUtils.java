@@ -2,6 +2,8 @@ package com.broadridge.utils;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriverException;
@@ -10,6 +12,8 @@ import org.openqa.selenium.interactions.Actions;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import org.testng.Assert;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -62,18 +66,18 @@ public class BrowserUtils {
         return jsonData;
     }
 
-    public static void headerContactUsFiller(String pageComparisonURL) throws IOException, InterruptedException {
+    public static void headerContactUsFiller(String pageComparisonURL , int testNumber) throws IOException, InterruptedException {
         WebElement headerContactUsButton = Driver.getDriver().findElement(By.xpath("//button[@data-modal='contact-modal']"));
         click(headerContactUsButton);
-        Thread.sleep(2000);
+        Thread.sleep(1000);
 
         WebElement headerFirstName = Driver.getDriver().findElement(By.xpath("(//input[@placeholder='First name'])[1]"));
-        headerFirstName.sendKeys("First_TESTTEST");
+        headerFirstName.sendKeys("First_"+testNumber+"_TESTTEST");
 
         WebElement headerLastName = Driver.getDriver().findElement(By.xpath("(//input[@placeholder='Last name'])[1]"));
-        headerLastName.sendKeys("Last_TESTTEST");
+        headerLastName.sendKeys("Last_"+testNumber+"_TESTTEST");
 
-        WebElement headerEmail = Driver.getDriver().findElement(By.xpath("(//input[@placeholder='john@email.com'])[1]"));
+        WebElement headerEmail = Driver.getDriver().findElement(By.xpath("(//input[@type='email'])[1]"));
         String emailTimeStamp = generateEmailTimeStamp();
         headerEmail.sendKeys(emailTimeStamp);
         System.out.println("emailTimeStamp = " + emailTimeStamp);
@@ -83,10 +87,10 @@ public class BrowserUtils {
         headerPhone.sendKeys("999-999-9999");
 
         WebElement headerJobTitle = Driver.getDriver().findElement(By.xpath("(//input[@id='job_title'])[1]"));
-        headerJobTitle.sendKeys("Job_TESTTEST");
+        headerJobTitle.sendKeys("Job_"+testNumber+"_TESTTEST");
 
         WebElement headerCompanyName = Driver.getDriver().findElement(By.xpath("(//input[@placeholder='Your company name'])[1]"));
-        headerCompanyName.sendKeys("Company_TESTTEST");
+        headerCompanyName.sendKeys("Company_"+testNumber+"_TESTTEST");
 
         WebElement headerCountrySelectorButton = Driver.getDriver().findElement(By.xpath("(//button[@class='dropdown-trigger'])[1]"));
         click(headerCountrySelectorButton);
@@ -100,10 +104,9 @@ public class BrowserUtils {
 
         WebElement headerSubmitButton = Driver.getDriver().findElement(By.xpath("(//button[@type='submit'])[1]"));
         click(headerSubmitButton);
-        Thread.sleep(3000);
+        Thread.sleep(2000);
 
-        Driver.test.info("............Header Contact Us Form Filled...................");
-        System.out.println("................Header Contact Us Form Filled...................");
+
 
         String formMessage = Driver.getDriver().findElement(By.xpath("//div[@class='contact-us__form-grid']")).getText();
         System.out.println("form message = " + formMessage);
@@ -118,8 +121,6 @@ public class BrowserUtils {
         Driver.test.info("form submission id = " + formSubmissionId );
         Driver.test.info("fullURL = " + fullURL );
 
-        System.out.println("formSubmissionId = " + formSubmissionId);
-        System.out.println("fullURL = " + fullURL);
 
         if (formSubmissionId != null && fullURL.equals(pageComparisonURL)){
             Driver.test.pass("Header Contact Us Form Filled Successfully");
@@ -127,6 +128,8 @@ public class BrowserUtils {
         }else {
             Driver.test.fail("Header Contact Us Form Filled Failed");
         }
+        Driver.test.info("............Header Contact Us Form Filled...................");
+        System.out.println("................Header Contact Us Form Filled...................");
 
 
     }
@@ -281,6 +284,30 @@ public class BrowserUtils {
         }
 
 
+    }
+
+    public  static String readExcel(int row, int column) throws IOException {
+        String path = "sitemap_urls_one_column.xlsx";
+
+        FileInputStream fileInputStream = new FileInputStream(path);
+        XSSFWorkbook workbook = new XSSFWorkbook(fileInputStream);
+        XSSFSheet sheet = workbook.getSheet("sitemap_urls_one_column");
+
+        String cellValue = sheet.getRow(row).getCell(column).getStringCellValue();
+
+        return cellValue;
+
+    }
+
+    public static int lastrow() throws IOException {
+        String path = "sitemap_urls_one_column.xlsx";
+
+        FileInputStream fileInputStream = new FileInputStream(path);
+        XSSFWorkbook workbook = new XSSFWorkbook(fileInputStream);
+        XSSFSheet sheet = workbook.getSheet("sitemap_urls_one_column");
+        int lastRow = sheet.getLastRowNum();
+        System.out.println("lastRow = " + lastRow);
+        return lastRow;
     }
 
 

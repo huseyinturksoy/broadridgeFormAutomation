@@ -9,15 +9,24 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.devtools.DevTools;
-import org.openqa.selenium.devtools.v134.network.Network;
-import org.openqa.selenium.devtools.v134.network.model.Request;
+import org.openqa.selenium.devtools.v140.network.*;
+import org.openqa.selenium.devtools.v140.network.model.Request;
+import org.openqa.selenium.devtools.v140.network.model.RequestId;
+import org.openqa.selenium.devtools.v140.network.model.Response;
+import org.openqa.selenium.devtools.v140.network.Network;
+import org.openqa.selenium.devtools.v140.network.model.Response;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.time.Duration;
+import java.util.Base64;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.TimeUnit;
 
@@ -31,6 +40,8 @@ public class Driver {
 
     public static String formurl ;
     public static String formmethod;
+
+    public static String csvContent;
     public static String formpayload;
 
     public static  ExtentReports extent;
@@ -46,11 +57,13 @@ public class Driver {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
                     ChromeOptions options = new ChromeOptions();
-                    options.addArguments("--headless");   // or just "--headless"
+                    //options.addArguments("--headless");   // or just "--headless"
                     options.addArguments("--no-sandbox");
                     options.addArguments("--disable-dev-shm-usage");
                     options.addArguments("--disable-gpu");
                     options.addArguments("--remote-allow-origins=*");
+                    options.addArguments("--disable-blink-features=AutomationControlled"); //to disable robot control
+
 
                     // extend report configuration
                     Path tempDir = Files.createTempDirectory("chrome-user-data");
@@ -62,45 +75,91 @@ public class Driver {
                     driver = chromeDriver;
 
 
-// DevTools başlat
+                    // DevTools başlat
                     devTools = chromeDriver.getDevTools();
                     devTools.createSession();
-                    devTools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
 
-                    // Listener ekle
+// Network enable (CDP v140+ imza)
+                    devTools.send(Network.enable(
+                            Optional.empty(),
+                            Optional.empty(),
+                            Optional.empty(),
+                            Optional.empty()
+                    ));
+
+// RequestId saklamak için map
+                    Map<RequestId, String> targetRequestIds = new HashMap<>();
+
+// Request listener
                     devTools.addListener(Network.requestWillBeSent(), request -> {
                         req = request.getRequest();
-                        //https://www.broadridge.com/api/form-processor
-                        //https://www-dev.broadridge.com/api/form-processor
-                        if (req.getUrl().equals("https://www-dev.broadridge.com/api/form-processor")) {
+
+                        if (req.getUrl().contains("/api/form-processor")) {
                             formurl = req.getUrl();
                             formpayload = req.getPostData().orElse("No Payload");
-                            //System.out.println("form payload = " + formpayload);
+                            System.out.println("📤 Form payload = " + formpayload);
                         }
                     });
 
+// ResponseReceived → sadece requestId sakla
+                    devTools.addListener(Network.responseReceived(), responseReceived -> {
+                        Response res = responseReceived.getResponse();
+
+                        if (res.getUrl().contains("/api/form-processor")) {
+                            RequestId requestId = responseReceived.getRequestId();
+                            targetRequestIds.put(requestId, res.getUrl());
+                            System.out.println("📌 ResponseReceived → stored RequestId: " + requestId);
+                        }
+                    });
+
+// LoadingFinished → body artık hazır, güvenli şekilde çek
+                    devTools.addListener(Network.loadingFinished(), loadingFinished -> {
+                        RequestId requestId = loadingFinished.getRequestId();
+
+                        if (targetRequestIds.containsKey(requestId)) {
+                            try {
+                                // Body çek
+                                Network.GetResponseBodyResponse body = devTools.send(Network.getResponseBody(requestId));
+
+                                String responseBody = body.getBody();
+
+                                // Base64 decode
+                                if (body.getBase64Encoded()) {
+                                    responseBody = new String(Base64.getDecoder().decode(responseBody), StandardCharsets.UTF_8);
+                                }
+
+                                System.out.println("✅ CSV content caught:");
+                                System.out.println(responseBody);
+
+                            } catch (Exception e) {
+                                System.out.println("❌ Body fetch failed: " + e.getMessage());
+                            }
+                        }
+                    });
+
+
                     //driver.manage().window().maximize();
                     driver.manage().window().setSize(new Dimension(1285,790));
-                    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+                    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
                     test.info("ChromeDriver started successfully");
                     break;
                 case "safari":
                     WebDriverManager.safaridriver().setup();
                     driver = new SafariDriver();
                     driver.manage().window().maximize();
-                    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+                    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
                     break;
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
                     driver = new FirefoxDriver();
                     driver.manage().window().maximize();
-                    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+                    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
                     break;
                 case "chrome-headless":
                     WebDriverManager.chromedriver().setup();
                     //driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
                     driver.manage().window().maximize();
-                    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+                    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
                     break;
                 case "edge":
                     WebDriverManager.edgedriver().setup();
@@ -109,7 +168,7 @@ public class Driver {
                     option.addArguments("--deny-permission-prompts");*/
                     driver = new EdgeDriver();
                     driver.manage().window().maximize();
-                    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+                    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
             }
         }

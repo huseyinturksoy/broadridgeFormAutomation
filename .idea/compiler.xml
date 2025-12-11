@@ -10,8 +10,5 @@
         <module name="broadridgeFormAutomationTest" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="broadridgeFormAutomationTest" target="20" />
-    </bytecodeTargetLevel>
   </component>
 </project>

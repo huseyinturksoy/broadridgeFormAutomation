@@ -106,21 +106,69 @@ public class Tests {
         //filling the forms according to page
 
         if (hasHeaderContact == 1 && hasV2ContactUsForm == 1){
-            BrowserUtils.headerContactUsFiller(pageComparisonURL);
+            BrowserUtils.headerContactUsFiller(pageComparisonURL, 1);
             BrowserUtils.v2ContactUsFiller(pageComparisonURL);
         } else if (hasHeaderContact == 1 && hasV1ContactUsForm == 1){
-            BrowserUtils.headerContactUsFiller(pageComparisonURL);
+            BrowserUtils.headerContactUsFiller(pageComparisonURL, 1);
             BrowserUtils.v1ContactUsFiller(pageComparisonURL);
         } else if (hasHeaderContact == 1 && hasV2downloadForm == 1){
-            BrowserUtils.headerContactUsFiller(pageComparisonURL);
+            BrowserUtils.headerContactUsFiller(pageComparisonURL, 1);
             BrowserUtils.v2DownloadFiller(pageComparisonURL);
         } else if (hasHeaderContact == 1 && hasV2ContactUsForm == 0 && hasV2downloadForm == 0 && hasV1ContactUsForm == 0){
-            BrowserUtils.headerContactUsFiller(pageComparisonURL);
+            BrowserUtils.headerContactUsFiller(pageComparisonURL, 1);
         }else {
             System.out.println("--------!!! NO FORM IS FOUND ON THE PAGE !!!--------");
         }
 
 
+    }
+
+    @Test()
+    public void formTest() throws IOException, InterruptedException {
+        int lastrow = BrowserUtils.lastrow();
+        int counter = 0;
+        String pageURL = "";
+
+        while (counter <= lastrow) {
+            pageURL = BrowserUtils.readExcel(counter, 0);
+            Driver.getDriver().get(pageURL);
+            Thread.sleep(1000);
+            counter++;
+
+            //clicking the cookie button
+
+            try{
+                WebElement cookieButton = Driver.getDriver().findElement(By.xpath("//button[.='Accept all cookies']"));
+                cookieButton.click();
+                Thread.sleep(1000);
+            }catch (Exception e){
+                System.out.println("no cookie button");
+            }
+
+
+            //checking the header contact us button and if it is existed filling the form
+            if (Driver.getDriver().findElement(By.xpath("//button[@data-modal='contact-modal']")).isDisplayed()){
+                WebElement headerContactUsButton = Driver.getDriver().findElement(By.xpath("//button[@data-modal='contact-modal']"));
+
+                System.out.println("header ContactUs button found = " + headerContactUsButton.isDisplayed());
+                Driver.test.info("Header Contact Us Button found");
+                headerContactUsButton.click();
+                Thread.sleep(1000);
+                BrowserUtils.headerContactUsFiller(pageURL, counter);
+
+            }
+
+            //checking the header contact us button and if it is existed filling the form
+
+
+        }
+    }
+
+
+    @Test()
+    public void excelTest() throws IOException, InterruptedException {
+
+        System.out.println(BrowserUtils.readExcel(0, 0));
     }
 
 
