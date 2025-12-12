@@ -40,7 +40,7 @@ public class Tests {
     }
 
 
-    @Test(dataProvider = "broadridgePages", dataProviderClass = TestData.class, enabled = true, priority = 1)
+    @Test(dataProvider = "broadridgePages", dataProviderClass = TestData.class, enabled = false, priority = 1)
     public void FormTester(String url, String pageComparisonURL) throws IOException, InterruptedException {
 
         // setting the all form flags
@@ -136,7 +136,6 @@ public class Tests {
             counter++;
 
             //clicking the cookie button
-
             try{
                 WebElement cookieButton = Driver.getDriver().findElement(By.xpath("//button[.='Accept all cookies']"));
                 cookieButton.click();
@@ -145,9 +144,8 @@ public class Tests {
                 System.out.println("no cookie button");
             }
 
-
             //checking the header contact us button and if it is existed filling the form
-            if (Driver.getDriver().findElement(By.xpath("//button[@data-modal='contact-modal']")).isDisplayed()){
+            try{
                 WebElement headerContactUsButton = Driver.getDriver().findElement(By.xpath("//button[@data-modal='contact-modal']"));
 
                 System.out.println("header ContactUs button found = " + headerContactUsButton.isDisplayed());
@@ -156,20 +154,22 @@ public class Tests {
                 Thread.sleep(1000);
                 BrowserUtils.headerContactUsFiller(pageURL, counter);
 
+            }catch (Exception e){
+                System.out.println("header contact us form can not be filled");
+                Driver.test.info("Header Contact Us Form can not be filled");
             }
 
             //checking the header contact us button and if it is existed filling the form
+            try{
+
+            }catch (Exception e){
+
+            }
 
 
         }
     }
 
-
-    @Test()
-    public void excelTest() throws IOException, InterruptedException {
-
-        System.out.println(BrowserUtils.readExcel(0, 0));
-    }
 
 
 

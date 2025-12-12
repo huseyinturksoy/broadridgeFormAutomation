@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import org.openqa.selenium.interactions.SourceType;
 import org.testng.Assert;
 
 import java.io.FileInputStream;
@@ -114,19 +115,24 @@ public class BrowserUtils {
 
         String formpayload = Driver.formpayload;
         System.out.println("formpayload for validation = " + formpayload);
-        Driver.test.info("formpayload for validation = " + formpayload);
+        //
 
         String formSubmissionId = getJsonField(formpayload, "formSubmissionId");
         String fullURL = getJsonField(formpayload, "fullURL");
         Driver.test.info("form submission id = " + formSubmissionId );
         Driver.test.info("fullURL = " + fullURL );
+        String cleanPageURL = pageComparisonURL.replaceAll("https://.*?:.*?@", "https://");
+        System.out.println("page comparison URL = " + cleanPageURL);
+        Driver.test.info("page comparison URL = " + cleanPageURL);
 
 
-        if (formSubmissionId != null && fullURL.equals(pageComparisonURL)){
-            Driver.test.pass("Header Contact Us Form Filled Successfully");
-            Driver.test.pass("The form has submission ID and the URL is proper");
+        if (formSubmissionId != null && !formSubmissionId.trim().isEmpty() && cleanPageURL.startsWith(fullURL)){
+            Driver.test.pass("Header Contact Us Form Filled Successfully. The form has submission ID and the URL is proper");
+
         }else {
-            Driver.test.fail("Header Contact Us Form Filled Failed");
+            Driver.test.fail("Header Contact Us Form Failed");
+            System.out.println("..........!!!...Filling the form failed...!!!........");
+            Driver.test.info("form payload for validation = " + formpayload);
         }
         Driver.test.info("............Header Contact Us Form Filled...................");
         System.out.println("................Header Contact Us Form Filled...................");
