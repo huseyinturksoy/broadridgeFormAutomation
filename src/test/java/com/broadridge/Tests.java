@@ -17,6 +17,8 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
+import static com.broadridge.utils.BrowserUtils.v2ContactUsFiller;
+import static com.broadridge.utils.BrowserUtils.v2DownloadFiller;
 import static com.broadridge.utils.Driver.extent;
 
 @Listeners(com.broadridge.FailureLogger.class)
@@ -40,7 +42,7 @@ public class Tests {
     }
 
 
-    @Test(dataProvider = "broadridgePages", dataProviderClass = TestData.class, enabled = false, priority = 1)
+    @Test(dataProvider = "broadridgePages", dataProviderClass = TestData.class, enabled = false, priority = 2)
     public void FormTester(String url, String pageComparisonURL) throws IOException, InterruptedException {
 
         // setting the all form flags
@@ -107,13 +109,13 @@ public class Tests {
 
         if (hasHeaderContact == 1 && hasV2ContactUsForm == 1){
             BrowserUtils.headerContactUsFiller(pageComparisonURL, 1);
-            BrowserUtils.v2ContactUsFiller(pageComparisonURL);
+            v2ContactUsFiller(pageComparisonURL, 1);
         } else if (hasHeaderContact == 1 && hasV1ContactUsForm == 1){
             BrowserUtils.headerContactUsFiller(pageComparisonURL, 1);
             BrowserUtils.v1ContactUsFiller(pageComparisonURL);
         } else if (hasHeaderContact == 1 && hasV2downloadForm == 1){
             BrowserUtils.headerContactUsFiller(pageComparisonURL, 1);
-            BrowserUtils.v2DownloadFiller(pageComparisonURL);
+            BrowserUtils.v2DownloadFiller(pageComparisonURL, 1);
         } else if (hasHeaderContact == 1 && hasV2ContactUsForm == 0 && hasV2downloadForm == 0 && hasV1ContactUsForm == 0){
             BrowserUtils.headerContactUsFiller(pageComparisonURL, 1);
         }else {
@@ -128,6 +130,10 @@ public class Tests {
         int lastrow = BrowserUtils.lastrow();
         int counter = 0;
         String pageURL = "";
+        //creating a unique test number
+        int uniqueNumber = (int) (System.currentTimeMillis() % 100_000)+1;
+        System.out.println(uniqueNumber);
+
 
         while (counter <= lastrow) {
             pageURL = BrowserUtils.readExcel(counter, 0);
@@ -147,22 +153,39 @@ public class Tests {
             //checking the header contact us button and if it is existed filling the form
             try{
                 WebElement headerContactUsButton = Driver.getDriver().findElement(By.xpath("//button[@data-modal='contact-modal']"));
-
+                Driver.test.info("Test Number = " + uniqueNumber);
                 System.out.println("header ContactUs button found = " + headerContactUsButton.isDisplayed());
                 Driver.test.info("Header Contact Us Button found");
                 headerContactUsButton.click();
                 Thread.sleep(1000);
-                BrowserUtils.headerContactUsFiller(pageURL, counter);
+                BrowserUtils.headerContactUsFiller(pageURL, uniqueNumber);
 
             }catch (Exception e){
                 System.out.println("header contact us form can not be filled");
                 Driver.test.info("Header Contact Us Form can not be filled");
             }
 
-            //checking the header contact us button and if it is existed filling the form
+            //checking the bottom contact us form and if it is existed filling the form
             try{
+                WebElement v2ContactUsForm = Driver.getDriver().findElement(By.xpath("(//section[@class='section contact-us'])[2]"));
+                System.out.println("v2 ContactUs form found on the bottom = " + v2ContactUsForm.isDisplayed());
+                v2ContactUsFiller(pageURL, uniqueNumber);
 
             }catch (Exception e){
+                System.out.println("V2 ContactUs form NOT found on the bottom");
+                Driver.test.info("V2 Contact Us Form can not be filled");
+
+            }
+
+            //checking the download form and if it is existed filling the form
+            try{
+                WebElement v2downloadForm = Driver.getDriver().findElement(By.xpath("//section[@class='section download-form']"));
+                System.out.println("v2 download form found = " + v2downloadForm.isDisplayed());
+                v2DownloadFiller(pageURL, uniqueNumber);
+
+            }catch (Exception e){
+                System.out.println("V2 Download form NOT found on the bottom");
+                Driver.test.info("Download Form can not be filled");
 
             }
 

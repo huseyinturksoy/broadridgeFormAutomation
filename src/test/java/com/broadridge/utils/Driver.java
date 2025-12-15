@@ -61,7 +61,7 @@ public class Driver {
                     Path tempDir = Files.createTempDirectory("chrome-user-data");
                     options.addArguments("user-data-dir=" + tempDir.toAbsolutePath().toString());
                     extent = ExtentManager.getInstance();
-                    test = extent.createTest("SetUp Test");
+                    test = extent.createTest("Broadridge Form Test");
 
                     ChromeDriver chromeDriver = new ChromeDriver(options);
                     driver = chromeDriver;

@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03316e82-885b-45a5-8ab8-683fa5d7f0e9" name="Changes" comment="excel update">
+    <list default="true" id="03316e82-885b-45a5-8ab8-683fa5d7f0e9" name="Changes" comment="report improved">
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sitemap_urls_one_column.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/sitemap_urls_one_column.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/broadridge/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/broadridge/Tests.java" afterDir="false" />
@@ -168,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1765488921922</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="report improved">
+      <created>1765553835187</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1765553835187</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -187,6 +195,7 @@
     <MESSAGE value="updated" />
     <MESSAGE value="main updated" />
     <MESSAGE value="excel update" />
-    <option name="LAST_COMMIT_MESSAGE" value="excel update" />
+    <MESSAGE value="report improved" />
+    <option name="LAST_COMMIT_MESSAGE" value="report improved" />
   </component>
 </project>

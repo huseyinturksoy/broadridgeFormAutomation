@@ -145,15 +145,15 @@ public class BrowserUtils {
     }
 
 
-    public static void v2ContactUsFiller(String pageComparisonURL) throws IOException, InterruptedException {
+    public static void v2ContactUsFiller(String pageComparisonURL, int testNumber) throws IOException, InterruptedException {
         Driver.getDriver().navigate().refresh();
-        Thread.sleep(3000);
+        Thread.sleep(1000);
 
         WebElement firstName = Driver.getDriver().findElement(By.xpath("(//input[@placeholder='First name'])[2]"));
-        firstName.sendKeys("First_TESTTEST");
+        firstName.sendKeys("First_"+testNumber+"_TESTTEST");
 
         WebElement lastName = Driver.getDriver().findElement(By.xpath("(//input[@placeholder='Last name'])[2]"));
-        lastName.sendKeys("Last_TESTTEST");
+        lastName.sendKeys("Last_"+testNumber+"_TESTTEST");
 
         WebElement email = Driver.getDriver().findElement(By.xpath("(//input[@placeholder='john@email.com'])[2]"));
         String emailTimeStamp = generateEmailTimeStamp();
@@ -165,10 +165,10 @@ public class BrowserUtils {
         phone.sendKeys("999-999-9999");
 
         WebElement jobTitle = Driver.getDriver().findElement(By.xpath("(//input[@id='job_title'])[2]"));
-        jobTitle.sendKeys("Job_TESTTEST");
+        jobTitle.sendKeys("Job_"+testNumber+"_TESTTEST");
 
         WebElement companyName = Driver.getDriver().findElement(By.xpath("(//input[@placeholder='Your company name'])[2]"));
-        companyName.sendKeys("Company_TESTTEST");
+        companyName.sendKeys("Company_"+testNumber+"_TESTTEST");
 
         WebElement countrySelectorButton = Driver.getDriver().findElement(By.xpath("(//button[@class='dropdown-trigger'])[2]"));
         click(countrySelectorButton);
@@ -182,7 +182,7 @@ public class BrowserUtils {
 
         WebElement submitButton = Driver.getDriver().findElement(By.xpath("(//button[@type='submit'])[2]"));
         click(submitButton);
-        Thread.sleep(3000);
+        Thread.sleep(1000);
 
         Driver.test.info("............V2 Contact Us Form Filled...................");
         System.out.println("................V2 Contact Us Form Filled...................");
@@ -197,35 +197,39 @@ public class BrowserUtils {
 
         String formSubmissionId = getJsonField(formpayload, "formSubmissionId");
         String fullURL = getJsonField(formpayload, "fullURL");
-        Driver.test.info("formSubmissionId = " + formSubmissionId);
-        Driver.test.info("fullURL = " + fullURL);
+        Driver.test.info("form submission id = " + formSubmissionId );
+        Driver.test.info("fullURL = " + fullURL );
+        String cleanPageURL = pageComparisonURL.replaceAll("https://.*?:.*?@", "https://");
+        System.out.println("page comparison URL = " + cleanPageURL);
+        Driver.test.info("page comparison URL = " + cleanPageURL);
 
 
-        System.out.println("formSubmissionId = " + formSubmissionId);
-        System.out.println("fullURL = " + fullURL);
+        if (formSubmissionId != null && !formSubmissionId.trim().isEmpty() && cleanPageURL.startsWith(fullURL)){
+            Driver.test.pass("Bottom Contact Us Form Filled Successfully. The form has submission ID and the URL is proper");
 
-        if (formSubmissionId != null && fullURL.equals(pageComparisonURL)){
-            Driver.test.pass("Header Contact Us Form Filled Successfully");
-            Driver.test.pass("The form has submission ID and the URL is proper");
         }else {
-            Driver.test.fail("Header Contact Us Form Filled Failed");
+            Driver.test.fail("Bottom Contact Us Form Failed");
+            System.out.println("..........!!!...Filling the form failed...!!!........");
+            Driver.test.info("form payload for validation = " + formpayload);
         }
+        Driver.test.info("............Bottom Contact Us Form Filled...................");
+        System.out.println("................Bottom Contact Us Form Filled...................");
 
 
 
     }
 
 
-    public static void  v2DownloadFiller(String pageComparisonURL) throws IOException, InterruptedException {
+    public static void  v2DownloadFiller(String pageComparisonURL, int testNumber) throws IOException, InterruptedException {
 
         Driver.getDriver().navigate().refresh();
-        Thread.sleep(3000);
+        Thread.sleep(1000);
 
         WebElement firstName = Driver.getDriver().findElement(By.xpath("(//input[@placeholder='First name'])[2]"));
-        firstName.sendKeys("First_TESTTEST");
+        firstName.sendKeys("First_"+testNumber+"_TESTTEST");
 
         WebElement lastName = Driver.getDriver().findElement(By.xpath("(//input[@placeholder='Last name'])[2]"));
-        lastName.sendKeys("Last_TESTTEST");
+        lastName.sendKeys("Last_"+testNumber+"_TESTTEST");
 
         WebElement email = Driver.getDriver().findElement(By.xpath("(//input[@placeholder='john@email.com'])[2]"));
         String emailTimeStamp = generateEmailTimeStamp();
@@ -235,7 +239,7 @@ public class BrowserUtils {
 
 
         WebElement companyName = Driver.getDriver().findElement(By.xpath("(//input[@placeholder='Your company name'])[2]"));
-        companyName.sendKeys("Company_TESTTEST");
+        companyName.sendKeys("Company_"+testNumber+"_TESTTEST");
 
 
         WebElement checkBoxForExtraField = Driver.getDriver().findElement(By.xpath("//input[@id='toggle-additional-fields']"));
@@ -247,7 +251,7 @@ public class BrowserUtils {
         phone.sendKeys("999-999-9999");
 
         WebElement jobTitle = Driver.getDriver().findElement(By.xpath("(//input[@id='job_title'])[2]"));
-        jobTitle.sendKeys("Job_TESTTEST");
+        jobTitle.sendKeys("Job_"+testNumber+"_TESTTEST");
 
         WebElement countrySelectorButton = Driver.getDriver().findElement(By.xpath("(//button[@class='dropdown-trigger'])[2]"));
         click(countrySelectorButton);
@@ -261,7 +265,7 @@ public class BrowserUtils {
 
         WebElement submitButton = Driver.getDriver().findElement(By.xpath("(//button[@type='submit'])[2]"));
         click(submitButton);
-        Thread.sleep(3000);
+        Thread.sleep(1000);
 
         Driver.test.info("............V2 Download Form Filled...................");
 
@@ -275,19 +279,23 @@ public class BrowserUtils {
 
         String formSubmissionId = getJsonField(formpayload, "formSubmissionId");
         String fullURL = getJsonField(formpayload, "fullURL");
-        Driver.test.info("formSubmissionId = " + formSubmissionId);
-        Driver.test.info("fullURL = " + fullURL);
+        Driver.test.info("form submission id = " + formSubmissionId );
+        Driver.test.info("fullURL = " + fullURL );
+        String cleanPageURL = pageComparisonURL.replaceAll("https://.*?:.*?@", "https://");
+        System.out.println("page comparison URL = " + cleanPageURL);
+        Driver.test.info("page comparison URL = " + cleanPageURL);
 
 
-        System.out.println("formSubmissionId = " + formSubmissionId);
-        System.out.println("fullURL = " + fullURL);
+        if (formSubmissionId != null && !formSubmissionId.trim().isEmpty() && cleanPageURL.startsWith(fullURL)){
+            Driver.test.pass("Download Form Filled Successfully. The form has submission ID and the URL is proper");
 
-        if (formSubmissionId != null && fullURL.equals(pageComparisonURL)){
-            Driver.test.pass("Header Contact Us Form Filled Successfully");
-            Driver.test.pass("The form has submission ID and the URL is proper");
         }else {
-            Driver.test.fail("Header Contact Us Form Filled Failed");
+            Driver.test.fail("Bottom Contact Us Form Failed");
+            System.out.println("..........!!!...Filling the form failed...!!!........");
+            Driver.test.info("form payload for validation = " + formpayload);
         }
+        Driver.test.info("............Download Form Filled...................");
+        System.out.println("................Download Form Filled...................");
 
 
     }
