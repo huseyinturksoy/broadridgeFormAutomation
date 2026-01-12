@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-05T05:58:06 UTC" name="Surefire suite" finished-at="2026-01-05T06:12:08 UTC" duration-ms="842248">
+  <suite started-at="2026-01-12T05:53:12 UTC" name="Surefire suite" finished-at="2026-01-12T06:07:20 UTC" duration-ms="847982">
     <groups>
     </groups>
-    <test started-at="2026-01-05T05:58:06 UTC" name="Surefire test" finished-at="2026-01-05T06:12:08 UTC" duration-ms="842248">
+    <test started-at="2026-01-12T05:53:12 UTC" name="Surefire test" finished-at="2026-01-12T06:07:20 UTC" duration-ms="847982">
       <class name="com.broadridge.Tests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.broadridge.Tests@27c86f2d]" started-at="2026-01-05T05:58:06 UTC" name="setUp" finished-at="2026-01-05T05:58:06 UTC" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.broadridge.Tests@27c86f2d]" started-at="2026-01-12T05:53:12 UTC" name="setUp" finished-at="2026-01-12T05:53:12 UTC" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="formTest()[pri:0, instance:com.broadridge.Tests@27c86f2d]" started-at="2026-01-05T05:58:06 UTC" name="formTest" finished-at="2026-01-05T06:12:08 UTC" duration-ms="841882" status="PASS">
+        <test-method signature="formTest()[pri:0, instance:com.broadridge.Tests@27c86f2d]" started-at="2026-01-12T05:53:12 UTC" name="formTest" finished-at="2026-01-12T06:07:20 UTC" duration-ms="847615" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.broadridge.Tests@27c86f2d]" started-at="2026-01-05T06:12:08 UTC" name="tearDown" finished-at="2026-01-05T06:12:08 UTC" duration-ms="330" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.broadridge.Tests@27c86f2d]" started-at="2026-01-12T06:07:20 UTC" name="tearDown" finished-at="2026-01-12T06:07:20 UTC" duration-ms="333" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
