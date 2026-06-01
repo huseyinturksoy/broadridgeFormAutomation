@@ -2,27 +2,27 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-25T09:11:57 UTC" name="Surefire suite" finished-at="2026-05-25T09:12:10 UTC" duration-ms="12571">
+  <suite started-at="2026-06-01T10:38:21 UTC" name="Surefire suite" finished-at="2026-06-01T10:38:24 UTC" duration-ms="3604">
     <groups>
     </groups>
-    <test started-at="2026-05-25T09:11:57 UTC" name="Surefire test" finished-at="2026-05-25T09:12:10 UTC" duration-ms="12571">
+    <test started-at="2026-06-01T10:38:21 UTC" name="Surefire test" finished-at="2026-06-01T10:38:24 UTC" duration-ms="3604">
       <class name="com.broadridge.Tests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.broadridge.Tests@13c10b87]" started-at="2026-05-25T09:11:57 UTC" name="setUp" finished-at="2026-05-25T09:11:57 UTC" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.broadridge.Tests@27c86f2d]" started-at="2026-06-01T10:38:21 UTC" name="setUp" finished-at="2026-06-01T10:38:21 UTC" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="formTest()[pri:0, instance:com.broadridge.Tests@13c10b87]" started-at="2026-05-25T09:11:57 UTC" name="formTest" finished-at="2026-05-25T09:12:09 UTC" duration-ms="12101" status="FAIL">
+        <test-method signature="formTest()[pri:0, instance:com.broadridge.Tests@27c86f2d]" started-at="2026-06-01T10:38:21 UTC" name="formTest" finished-at="2026-06-01T10:38:24 UTC" duration-ms="3263" status="FAIL">
           <exception class="org.openqa.selenium.devtools.DevToolsException">
             <message>
               <![CDATA[You are using a no-op implementation of the CDP. The most likely reason for this is that Selenium was unable to find an implementation of the CDP protocol that matches your browser. Please be sure to include an implementation on the classpath, possibly by adding a new (maven) dependency of `org.seleniumhq.selenium:selenium-devtools-vNN:4.36.0` where `NN` matches the major version of the browser you're using.
 Build info: version: '4.36.0', revision: '6d115cfd87'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1013-azure', java.version: '20.0.2'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1015-azure', java.version: '20.0.2'
 Driver info: DevTools Connection]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.devtools.DevToolsException: You are using a no-op implementation of the CDP. The most likely reason for this is that Selenium was unable to find an implementation of the CDP protocol that matches your browser. Please be sure to include an implementation on the classpath, possibly by adding a new (maven) dependency of `org.seleniumhq.selenium:selenium-devtools-vNN:4.36.0` where `NN` matches the major version of the browser you're using.
 Build info: version: '4.36.0', revision: '6d115cfd87'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1013-azure', java.version: '20.0.2'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1015-azure', java.version: '20.0.2'
 Driver info: DevTools Connection
 at org.openqa.selenium.devtools.noop.NoOpDomains.target(NoOpDomains.java:60)
 at org.openqa.selenium.devtools.DevTools.findTarget(DevTools.java:199)
@@ -67,7 +67,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.broadridge.Tests@13c10b87]" started-at="2026-05-25T09:12:09 UTC" name="tearDown" finished-at="2026-05-25T09:12:10 UTC" duration-ms="432" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.broadridge.Tests@27c86f2d]" started-at="2026-06-01T10:38:24 UTC" name="tearDown" finished-at="2026-06-01T10:38:24 UTC" duration-ms="302" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
