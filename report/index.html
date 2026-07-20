@@ -131,7 +131,7 @@
                   <span class="method-name">formTest</span>
                   <div class="stack-trace">org.openqa.selenium.devtools.DevToolsException: You are using a no-op implementation of the CDP. The most likely reason for this is that Selenium was unable to find an implementation of the CDP protocol that matches your browser. Please be sure to include an implementation on the classpath, possibly by adding a new (maven) dependency of `org.seleniumhq.selenium:selenium-devtools-vNN:4.36.0` where `NN` matches the major version of the browser you&apos;re using.
 Build info: version: &apos;4.36.0&apos;, revision: &apos;6d115cfd87&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.17.0-1018-azure&apos;, java.version: &apos;20.0.2&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.17.0-1020-azure&apos;, java.version: &apos;20.0.2&apos;
 Driver info: DevTools Connection
 	at org.openqa.selenium.devtools.noop.NoOpDomains.target(NoOpDomains.java:60)
 	at org.openqa.selenium.devtools.DevTools.findTarget(DevTools.java:199)
@@ -202,7 +202,7 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'formTest')
 data.setCell(0, 2, 'com.broadridge.Tests')
-data.setCell(0, 3, 9859);
+data.setCell(0, 3, 9486);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
@@ -249,11 +249,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">formTest</span>
-                <span class="method-start">24 ms</span>
+                <span class="method-start">23 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">9889 ms</span>
+                <span class="method-start">9519 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
