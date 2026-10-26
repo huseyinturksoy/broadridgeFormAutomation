@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-19T11:06:07 UTC" name="Surefire suite" finished-at="2026-10-19T11:06:11 UTC" duration-ms="3824">
+  <suite started-at="2026-10-26T11:25:33 UTC" name="Surefire suite" finished-at="2026-10-26T11:25:41 UTC" duration-ms="8662">
     <groups>
     </groups>
-    <test started-at="2026-10-19T11:06:07 UTC" name="Surefire test" finished-at="2026-10-19T11:06:11 UTC" duration-ms="3824">
+    <test started-at="2026-10-26T11:25:33 UTC" name="Surefire test" finished-at="2026-10-26T11:25:41 UTC" duration-ms="8662">
       <class name="com.broadridge.Tests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.broadridge.Tests@27c86f2d]" started-at="2026-10-19T11:06:07 UTC" name="setUp" finished-at="2026-10-19T11:06:07 UTC" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.broadridge.Tests@27c86f2d]" started-at="2026-10-26T11:25:33 UTC" name="setUp" finished-at="2026-10-26T11:25:33 UTC" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="formTest()[pri:0, instance:com.broadridge.Tests@27c86f2d]" started-at="2026-10-19T11:06:07 UTC" name="formTest" finished-at="2026-10-19T11:06:10 UTC" duration-ms="3533" status="FAIL">
+        <test-method signature="formTest()[pri:0, instance:com.broadridge.Tests@27c86f2d]" started-at="2026-10-26T11:25:33 UTC" name="formTest" finished-at="2026-10-26T11:25:41 UTC" duration-ms="8358" status="FAIL">
           <exception class="org.openqa.selenium.devtools.DevToolsException">
             <message>
               <![CDATA[You are using a no-op implementation of the CDP. The most likely reason for this is that Selenium was unable to find an implementation of the CDP protocol that matches your browser. Please be sure to include an implementation on the classpath, possibly by adding a new (maven) dependency of `org.seleniumhq.selenium:selenium-devtools-vNN:4.36.0` where `NN` matches the major version of the browser you're using.
@@ -67,7 +67,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.broadridge.Tests@27c86f2d]" started-at="2026-10-19T11:06:10 UTC" name="tearDown" finished-at="2026-10-19T11:06:11 UTC" duration-ms="262" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.broadridge.Tests@27c86f2d]" started-at="2026-10-26T11:25:41 UTC" name="tearDown" finished-at="2026-10-26T11:25:41 UTC" duration-ms="282" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
